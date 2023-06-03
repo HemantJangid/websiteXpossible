@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-yellow {
+  color: #f9d71c;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #000;
+  color: #fff;
+
+  .background {
+    position: fixed;
+    inset: 0;
+    background-image: url("./images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: auto;
+
+    ul {
+      display: flex;
+      list-style: none;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+      }
+
+      &::before {
+        top: -30px;
+        left: 0;
+      }
+
+      &::after {
+        bottom: -30px;
+        right: 0;
+      }
+
+      li {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      margin: 0 3rem;
+    }
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    flex-direction: column;
+
+    img {
+      object-fit: cover;
+      max-height: 600px;
+      transform: scale(1.1);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 5rem 0 1rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 2rem 0;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    span {
+      font-size: 3rem;
+      font-weight: 600;
+      margin: 2rem 0;
+      text-align: center;
+    }
+  }
+
+  .features {
+    margin: 10rem auto;
+
+    .feature {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 2rem 0;
+        max-width: 800px;
+        line-height: 3rem;
+      }
+
+      img {
+        object-fit: cover;
+        max-height: 400px;
+      }
+    }
+
+    .feature-left {
+      flex-direction: row;
+
+      p {
+        text-align: right;
+      }
+    }
+
+    .feature-right {
+      flex-direction: row-reverse;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
