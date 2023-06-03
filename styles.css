@@ -122,16 +122,16 @@ body .features .feature {
   width: 100%;
 }
 body .features .feature p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   margin: 2rem 0;
-  max-width: 800px;
-  line-height: 3rem;
+  max-width: 700px;
+  line-height: 2.5rem;
 }
 body .features .feature img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 400px;
+  max-height: 350px;
 }
 body .features .feature-left {
   flex-direction: row;
@@ -155,7 +155,7 @@ body .services {
 }
 body .services .service {
   display: flex;
-  margin: auto;
+  margin: 2rem auto;
   justify-content: center;
   align-items: center;
   width: -moz-fit-content;
@@ -200,7 +200,7 @@ body .clients {
 }
 body .clients .client {
   display: flex;
-  margin: auto;
+  margin: 1rem auto;
   justify-content: center;
   align-items: center;
   width: -moz-fit-content;
@@ -213,6 +213,210 @@ body .clients .client img {
   max-width: 200px;
 }
 body .clients p.side-content {
+  position: absolute;
+  top: 50%;
+  left: -200px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #f9d71c;
+  transform: translate(0, -50%) rotateZ(-90deg);
+}
+body .works {
+  margin: 10rem 0 10rem auto;
+  max-width: 1200px;
+  position: relative;
+}
+body .works swiper-container {
+  width: 100%;
+  height: 100%;
+}
+body .works swiper-container swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body .works swiper-container swiper-slide .work {
+  color: #f9d71c;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  border: 1px white solid;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+body .works swiper-container swiper-slide .work .image {
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+body .works swiper-container swiper-slide .work .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+body .works swiper-container swiper-slide .work .description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+body .works .custom-swiper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+body .works .custom-swiper-buttons img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+  margin-bottom: -80px;
+}
+body .works .custom-swiper-buttons img.swiper-button-disabled {
+  opacity: 0;
+}
+body .works .custom-swiper-buttons .custom-swiper-buttons-right {
+  transform: rotate(180deg);
+}
+body .works p.side-content {
+  position: absolute;
+  top: 50%;
+  left: -370px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #f9d71c;
+  transform: translate(0, -50%) rotateZ(-90deg);
+}
+body .merchs {
+  margin: 10rem auto 10rem 0;
+  max-width: 1200px;
+  position: relative;
+}
+body .merchs swiper-container {
+  width: 100%;
+  height: 100%;
+}
+body .merchs swiper-container swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body .merchs swiper-container swiper-slide .merch {
+  color: #f9d71c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  padding: 2rem;
+}
+body .merchs swiper-container swiper-slide .merch .image {
+  height: 350px;
+  width: 350px;
+  background-color: black;
+  border: 1px white solid;
+  border-radius: 50%;
+}
+body .merchs swiper-container swiper-slide .merch .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 3rem 0 1rem 0;
+}
+body .merchs swiper-container swiper-slide .merch .description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+body .merchs .custom-swiper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+body .merchs .custom-swiper-buttons img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+  margin-bottom: -80px;
+}
+body .merchs .custom-swiper-buttons img.swiper-button-disabled {
+  opacity: 0;
+}
+body .merchs .custom-swiper-buttons .custom-swiper-buttons-right {
+  transform: rotate(180deg);
+}
+body .merchs p.side-content {
+  position: absolute;
+  top: 50%;
+  right: -200px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #f9d71c;
+  transform: translate(0, -50%) rotateZ(-90deg);
+}
+body .blogs {
+  margin: 10rem 0 10rem auto;
+  max-width: 1200px;
+  position: relative;
+}
+body .blogs swiper-container {
+  width: 100%;
+  height: 100%;
+}
+body .blogs swiper-container swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body .blogs swiper-container swiper-slide .blog {
+  color: #f9d71c;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-image: url("./images/blog-shape.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 350px;
+}
+body .blogs swiper-container swiper-slide .blog .image {
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+body .blogs swiper-container swiper-slide .blog .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0 5rem 0;
+}
+body .blogs .custom-swiper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+body .blogs .custom-swiper-buttons img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+  margin-bottom: -80px;
+}
+body .blogs .custom-swiper-buttons img.swiper-button-disabled {
+  opacity: 0;
+}
+body .blogs .custom-swiper-buttons .custom-swiper-buttons-right {
+  transform: rotate(180deg);
+}
+body .blogs p.side-content {
   position: absolute;
   top: 50%;
   left: -200px;
