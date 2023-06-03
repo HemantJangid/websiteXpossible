@@ -155,6 +155,7 @@ body .services {
 }
 body .services .service {
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   width: -moz-fit-content;
@@ -175,6 +176,50 @@ body .services .service p {
 body .services button {
   position: absolute;
   top: 50%;
-  right: -150px;
+  right: -200px;
   transform: translate(0, -50%) rotate(-90deg);
+}
+body .services p.side-content {
+  position: absolute;
+  top: 50%;
+  left: -300px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #f9d71c;
+  transform: translate(0, -50%) rotateZ(-90deg);
+}
+body .clients {
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  width: 1000px;
+  position: relative;
+}
+body .clients .client {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: column;
+}
+body .clients .client img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+}
+body .clients p.side-content {
+  position: absolute;
+  top: 50%;
+  left: -200px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #f9d71c;
+  transform: translate(0, -50%) rotateZ(-90deg);
 }/*# sourceMappingURL=styles.css.map */
