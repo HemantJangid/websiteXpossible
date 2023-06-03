@@ -224,7 +224,7 @@ body .clients p.side-content {
   transform: translate(0, -50%) rotateZ(-90deg);
 }
 body .works {
-  margin: 10rem 0 10rem auto;
+  margin: 10rem auto 10rem auto;
   max-width: 1200px;
   position: relative;
 }
@@ -284,7 +284,7 @@ body .works .custom-swiper-buttons .custom-swiper-buttons-right {
 body .works p.side-content {
   position: absolute;
   top: 50%;
-  left: -370px;
+  left: -330px;
   font-size: 3.5rem;
   font-weight: 400;
   margin: 0;
@@ -293,7 +293,7 @@ body .works p.side-content {
   transform: translate(0, -50%) rotateZ(-90deg);
 }
 body .merchs {
-  margin: 10rem auto 10rem 0;
+  margin: 10rem auto 10rem auto;
   max-width: 1200px;
   position: relative;
 }
@@ -354,7 +354,7 @@ body .merchs .custom-swiper-buttons .custom-swiper-buttons-right {
 body .merchs p.side-content {
   position: absolute;
   top: 50%;
-  right: -200px;
+  right: -130px;
   font-size: 3.5rem;
   font-weight: 400;
   margin: 0;
@@ -363,7 +363,7 @@ body .merchs p.side-content {
   transform: translate(0, -50%) rotateZ(-90deg);
 }
 body .blogs {
-  margin: 10rem 0 10rem auto;
+  margin: 10rem auto 10rem auto;
   max-width: 1200px;
   position: relative;
 }
@@ -419,7 +419,7 @@ body .blogs .custom-swiper-buttons .custom-swiper-buttons-right {
 body .blogs p.side-content {
   position: absolute;
   top: 50%;
-  left: -200px;
+  left: -130px;
   font-size: 3.5rem;
   font-weight: 400;
   margin: 0;
