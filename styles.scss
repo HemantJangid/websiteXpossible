@@ -1,3 +1,7 @@
+$base-color: #f9d71c;
+$white-color: #fff;
+$black-color: #000;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +9,29 @@
 }
 
 .font-yellow {
-  color: #f9d71c;
+  color: $base-color;
 }
 
 body {
   font-family: "Jost", sans-serif;
-  background-color: #000;
-  color: #fff;
+  color: $white-color;
+
+  .btn {
+    border: none;
+    border-radius: 50px;
+    background-color: $base-color;
+    color: $black-color;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $white-color;
+    }
+  }
 
   .background {
     position: fixed;
@@ -49,7 +69,7 @@ body {
         display: block;
         width: 100%;
         height: 1px;
-        background-color: #fff;
+        background-color: $white-color;
       }
 
       &::before {
@@ -147,6 +167,42 @@ body {
       p {
         text-align: left;
       }
+    }
+  }
+
+  .services {
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 1000px;
+    position: relative;
+
+    .service {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      flex-direction: column;
+
+      img {
+        object-fit: cover;
+        max-width: 200px;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: center;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      right: -150px;
+      transform: translate(0, -50%) rotate(-90deg);
     }
   }
 }
