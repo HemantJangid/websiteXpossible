@@ -1,6 +1,7 @@
 $base-color: #f9d71c;
 $white-color: #fff;
 $black-color: #000;
+$bg-color: #191f2c;
 
 * {
   margin: 0;
@@ -15,7 +16,7 @@ $black-color: #000;
 body {
   font-family: "Jost", sans-serif;
   color: $white-color;
-  background-color: $black-color;
+  background-color: $bg-color;
 
   .btn {
     border: none;
@@ -46,13 +47,9 @@ body {
   }
 
   .navigation {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
     margin: auto;
 
     ul {
@@ -61,7 +58,6 @@ body {
       flex: 1;
       justify-content: space-between;
       align-items: center;
-      padding: 0 1rem;
       position: relative;
 
       &::before,
@@ -75,12 +71,12 @@ body {
       }
 
       &::before {
-        top: -30px;
+        top: -25px;
         left: 0;
       }
 
       &::after {
-        bottom: -30px;
+        bottom: -25px;
         right: 0;
       }
 
@@ -92,8 +88,8 @@ body {
     }
 
     img {
-      height: 200px;
-      width: 200px;
+      height: 180px;
+      width: 180px;
       object-fit: cover;
       margin: 0 3rem;
     }

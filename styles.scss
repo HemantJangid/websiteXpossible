@@ -48,7 +48,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
     margin: auto;
 
     ul {
@@ -57,7 +56,6 @@ body {
       flex: 1;
       justify-content: space-between;
       align-items: center;
-      padding: 0 1rem;
       position: relative;
 
       &::before,
@@ -71,12 +69,12 @@ body {
       }
 
       &::before {
-        top: -30px;
+        top: -25px;
         left: 0;
       }
 
       &::after {
-        bottom: -30px;
+        bottom: -25px;
         right: 0;
       }
 
@@ -88,8 +86,8 @@ body {
     }
 
     img {
-      height: 200px;
-      width: 200px;
+      height: 180px;
+      width: 180px;
       object-fit: cover;
       margin: 0 3rem;
     }
