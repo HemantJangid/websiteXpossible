@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./services.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="container navigation">
+      <img src="../gifs/logo.gif" alt="logo" height="200" width="200" />
+    </nav>
+
+    <!-- Hero -->
+    <section class="container hero">
+      <img src="./services-gifs/lady.gif" alt="hero" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        corporis quidem natus nostrum quam ipsa fuga asperiores iure dolore sint
+        earum cumque id, blanditiis reprehenderit consequuntur pariatur
+        voluptatum excepturi tempore!
+      </p>
+    </section>
+
+    <!-- services -->
+    <section class="container services">
+      <div class="service service-left">
+        <div>
+          <h3>Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam illum hic accusamus cum rem eum velit consequatur quaerat
+            necessitatibus?
+          </p>
+        </div>
+        <img src="./services-gifs/design.gif" alt="" />
+      </div>
+
+      <div class="service service-right">
+        <div>
+          <h3>Brand & Campaign</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam illum hic accusamus cum rem eum velit consequatur quaerat
+            necessitatibus?
+          </p>
+        </div>
+        <img src="./services-gifs/brand-and-campaign.gif" alt="" />
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="container services">
+      <div class="service service-left">
+        <div>
+          <h3>Social Media Creatives</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam illum hic accusamus cum rem eum velit consequatur quaerat
+            necessitatibus?
+          </p>
+        </div>
+        <img src="./services-gifs/social-media.gif" alt="" />
+      </div>
+
+      <div class="service service-right">
+        <div>
+          <h3>Scripts & Video</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam illum hic accusamus cum rem eum velit consequatur quaerat
+            necessitatibus?
+          </p>
+        </div>
+        <img src="./services-gifs/scripts-and-video-.gif" alt="" />
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="container services">
+      <div class="service service-left">
+        <div>
+          <h3>Photography</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam illum hic accusamus cum rem eum velit consequatur quaerat
+            necessitatibus?
+          </p>
+        </div>
+        <img src="./services-gifs/photography.gif" alt="" />
+      </div>
+
+      <div class="service service-right">
+        <div>
+          <h3>Website & Copy</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veniam illum hic accusamus cum rem eum velit consequatur quaerat
+            necessitatibus?
+          </p>
+        </div>
+        <img src="./services-gifs/website-&-copy.gif" alt="" />
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script>
+      const workSwiper = document.querySelector("swiper-container.work-swiper");
+      const merchSwiper = document.querySelector(
+        "swiper-container.merch-swiper"
+      );
+      const blogSwiper = document.querySelector("swiper-container.blog-swiper");
+
+      const params = {
+        navigation: {
+          nextEl: ".custom-swiper-buttons-right",
+          prevEl: ".custom-swiper-buttons-left",
+        },
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
+        },
+        scrollbar: true,
+        // navigation: true,
+        // pagination: {
+        //   clickable: true,
+        // },
+      };
+
+      Object.assign(workSwiper, params);
+      Object.assign(merchSwiper, params);
+      Object.assign(blogSwiper, params);
+
+      workSwiper.initialize();
+      merchSwiper.initialize();
+      blogSwiper.initialize();
+    </script>
+  </body>
+</html>
