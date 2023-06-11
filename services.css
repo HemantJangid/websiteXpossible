@@ -85,20 +85,17 @@ body .navigation img {
      object-fit: cover;
   margin: 0 3rem;
 }
+body img.landing-image {
+  margin-top: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px auto 0 auto;
+  margin: 20px auto 0 auto;
   flex-direction: column;
-  height: 100vh;
-}
-body .hero img {
-  margin-top: 20rem;
-  padding-top: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 800px;
 }
 body .hero h2 {
   font-size: 2.5rem;
