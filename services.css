@@ -81,7 +81,6 @@ body .navigation img {
   margin: 0 3rem;
 }
 body img.landing-image {
-  margin-top: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
