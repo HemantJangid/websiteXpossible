@@ -51,8 +51,6 @@ body .navigation ul {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  font-weight: 500;
-  font-size: 1.2rem;
   position: relative;
 }
 body .navigation ul::before, body .navigation ul::after {
@@ -72,6 +70,8 @@ body .navigation ul::after {
   right: 0;
 }
 body .navigation ul li {
+  font-size: 1.7rem;
+  font-weight: 500;
   cursor: pointer;
 }
 body .navigation img {

@@ -72,6 +72,7 @@ body .background .navigation ul::after {
 }
 body .background .navigation ul li {
   font-size: 1.7rem;
+  font-weight: 500;
   cursor: pointer;
 }
 body .background .navigation img {
