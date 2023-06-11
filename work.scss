@@ -19,6 +19,7 @@ $dark-blue: #0f0054;
 body {
   font-family: "Jost", sans-serif;
   color: $white-color;
+  background-color: $purple-color;
 
   .btn {
     border: none;
@@ -40,7 +41,7 @@ body {
   .background {
     // position: absolute;
     inset: 0;
-    background-image: url("./images/image_top-section.jpg");
+    background-image: url("./images/work-images/image_top-section.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -115,7 +116,7 @@ body {
   }
 
   .work-body {
-    background-image: url("./images/bg-gradient.jpeg");
+    background-image: url("./images/work-images/bg-gradient.jpeg");
     // height: 100vh;
     width: 100vw;
     margin: auto;

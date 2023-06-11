@@ -11,6 +11,7 @@
 body {
   font-family: "Jost", sans-serif;
   color: #fff;
+  background-color: #9a49a0;
 }
 body .btn {
   border: none;
@@ -29,7 +30,7 @@ body .btn:hover {
 }
 body .background {
   inset: 0;
-  background-image: url("./images/image_top-section.jpg");
+  background-image: url("./images/work-images/image_top-section.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -95,7 +96,7 @@ body .background .hero img {
   transform: scale(1.1);
 }
 body .work-body {
-  background-image: url("./images/bg-gradient.jpeg");
+  background-image: url("./images/work-images/bg-gradient.jpeg");
   width: 100vw;
   margin: auto;
 }
@@ -189,4 +190,4 @@ body .work-body .work-cards p {
   font-size: 1rem;
   font-weight: 400;
   text-align: justify;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=work.css.map */
