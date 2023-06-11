@@ -63,8 +63,6 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 0 1rem;
-        font-weight: 500;
-        font-size: 1.2rem;
         position: relative;
 
         &::before,
@@ -88,6 +86,7 @@ body {
         }
 
         li {
+          font-size: 1.7rem;
           cursor: pointer;
         }
       }
@@ -122,7 +121,7 @@ body {
     margin: auto;
 
     .work-anybody-bg {
-      background-image: url("./images/pink-strip.png");
+      background-image: url("./images/work-images/pink-strip.png");
 
       .work-anybody {
         display: flex;

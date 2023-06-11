@@ -52,8 +52,6 @@ body .background .navigation ul {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  font-weight: 500;
-  font-size: 1.2rem;
   position: relative;
 }
 body .background .navigation ul::before, body .background .navigation ul::after {
@@ -73,6 +71,7 @@ body .background .navigation ul::after {
   right: 0;
 }
 body .background .navigation ul li {
+  font-size: 1.7rem;
   cursor: pointer;
 }
 body .background .navigation img {
@@ -101,7 +100,7 @@ body .work-body {
   margin: auto;
 }
 body .work-body .work-anybody-bg {
-  background-image: url("./images/pink-strip.png");
+  background-image: url("./images/work-images/pink-strip.png");
 }
 body .work-body .work-anybody-bg .work-anybody {
   display: flex;
