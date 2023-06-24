@@ -70,42 +70,186 @@ body .navigation img {
      object-fit: cover;
   margin: 0 3rem;
 }
-body .hero {
+body .common-bg {
+  background-image: url("./images/contact/brick-wall.png");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+}
+body .common-bg .hero {
   display: flex;
   justify-content: center;
   margin: auto;
   margin-top: 2rem;
 }
-body .hero .hero-left {
+body .common-bg .hero .hero-left {
   flex: 1;
   padding: 0 3rem;
 }
-body .hero .hero-left img {
+body .common-bg .hero .hero-left img {
   height: 50px;
 }
-body .hero .hero-left p {
+body .common-bg .hero .hero-left p {
   font-size: 1.5rem;
   font-weight: 400;
 }
-body .hero .hero-right {
+body .common-bg .hero .hero-right {
   flex: 1;
   padding: 0 3rem;
 }
-body .hero .hero-right form {
+body .common-bg .hero .hero-right form {
   text-align: left;
 }
-body .hero .hero-right form label {
+body .common-bg .hero .hero-right form label {
   display: block;
   font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 5px;
 }
-body .hero .hero-right form input,
-body .hero .hero-right form textarea {
+body .common-bg .hero .hero-right form input,
+body .common-bg .hero .hero-right form textarea {
   width: 100%;
   padding: 0.5rem;
   color: #000;
 }
-body .hero .hero-right form img {
+body .common-bg .hero .hero-right form img {
   height: 40px;
+}
+body .common-bg .poster-1 {
+  margin-left: 10rem;
+  max-width: 200px;
+}
+body .common-bg .illustrations {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+}
+body .common-bg .illustrations img.brick-wall {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+body .common-bg .illustrations img.main {
+  position: absolute;
+  bottom: -17%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  transform: scale(0.85);
+}
+body .common-bg .illustrations img.poster-2 {
+  position: absolute;
+  top: 7%;
+  right: 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 250px;
+}
+body .common-bg .illustrations img.poster-3 {
+  position: absolute;
+  top: 15%;
+  right: -2%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 250px;
+}
+body .footer {
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+}
+body .footer .footer-container {
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 0;
+}
+body .footer .footer-container img {
+  height: 400px;
+}
+body .footer .footer-container .links {
+  display: flex;
+}
+body .footer .footer-container .links ul {
+  margin: 2rem;
+}
+body .footer .footer-container .links ul li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+body .footer .footer-container .copyright {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10rem 4rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+body .footer .footer-container .copyright .dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 0 1.5rem;
+}
+body .footer .footer-container .copyright .dot:last-child {
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+  body .common-bg {
+    background-image: none;
+  }
+  body .navigation {
+    display: none;
+  }
+  body .poster-1 {
+    margin-top: 3rem;
+  }
+  body .hero {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  body .hero .hero-left {
+    margin-top: 3rem;
+  }
+  body .hero .hero-right {
+    margin-top: 3rem;
+  }
+  body .illustrations {
+    display: none;
+  }
+  body .footer .footer-container {
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-top: 100px;
+  }
+  body .footer .footer-container img {
+    height: 200px;
+    margin-top: 100px;
+  }
+  body .footer .footer-container img.illustration {
+    top: -200px;
+    left: 50%;
+    transform: translate(-50%, 0) scale(2);
+    margin: 0;
+  }
+  body .footer .footer-container .copyright {
+    position: unset;
+    padding: 0;
+    margin: 1rem auto;
+  }
+  body .footer .footer-container .copyright .dot {
+    display: none;
+  }
 }/*# sourceMappingURL=contact.css.map */

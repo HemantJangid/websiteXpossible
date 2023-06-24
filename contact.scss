@@ -87,49 +87,220 @@ body {
     }
   }
 
-  .hero {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 2rem;
+  .common-bg {
+    background-image: url("./images/contact/brick-wall.png");
+    background-repeat: repeat;
+    background-size: 100% 100%;
 
-    .hero-left {
-      flex: 1;
-      padding: 0 3rem;
+    .hero {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-top: 2rem;
 
-      img {
-        height: 50px;
+      .hero-left {
+        flex: 1;
+        padding: 0 3rem;
+
+        img {
+          height: 50px;
+        }
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
       }
 
-      p {
-        font-size: 1.5rem;
-        font-weight: 400;
+      .hero-right {
+        flex: 1;
+        padding: 0 3rem;
+
+        form {
+          text-align: left;
+
+          label {
+            display: block;
+            font-size: 1.7rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 0.5rem;
+            color: $black-color;
+          }
+
+          img {
+            height: 40px;
+          }
+        }
       }
     }
 
-    .hero-right {
-      flex: 1;
-      padding: 0 3rem;
+    .poster-1 {
+      margin-left: 10rem;
+      max-width: 200px;
+    }
 
-      form {
-        text-align: left;
+    .illustrations {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+      height: 100vh;
+      width: 100vw;
 
-        label {
-          display: block;
-          font-size: 1.7rem;
-          font-weight: 500;
-          margin-bottom: 5px;
+      img.brick-wall {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      img.main {
+        position: absolute;
+        bottom: -17%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+        transform: scale(0.85);
+      }
+
+      img.poster-2 {
+        position: absolute;
+        top: 7%;
+        right: 25%;
+        object-fit: cover;
+        max-height: 250px;
+      }
+
+      img.poster-3 {
+        position: absolute;
+        top: 15%;
+        right: -2%;
+        object-fit: cover;
+        max-height: 250px;
+      }
+    }
+  }
+
+  .footer {
+    background-color: $white-color;
+    position: relative;
+    z-index: 0;
+
+    .footer-container {
+      color: $black-color;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      padding: 2rem 0;
+
+      img {
+        height: 400px;
+      }
+
+      .links {
+        display: flex;
+
+        ul {
+          margin: 2rem;
+          li {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            cursor: pointer;
+          }
         }
+      }
 
-        input,
-        textarea {
-          width: 100%;
-          padding: 0.5rem;
-          color: $black-color;
+      .copyright {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 10rem 4rem 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+
+        .dot {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          background-color: $black-color;
+          margin: 0 1.5rem;
+
+          &:last-child {
+            margin-right: 3rem;
+          }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    .common-bg {
+      background-image: none;
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    .poster-1 {
+      margin-top: 3rem;
+    }
+
+    .hero {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+
+      .hero-left {
+        margin-top: 3rem;
+      }
+
+      .hero-right {
+        margin-top: 3rem;
+      }
+    }
+
+    .illustrations {
+      display: none;
+    }
+
+    .footer {
+      .footer-container {
+        flex-direction: column;
+        padding: 1rem 0;
+        margin-top: 100px;
 
         img {
-          height: 40px;
+          height: 200px;
+          margin-top: 100px;
+        }
+
+        img.illustration {
+          top: -200px;
+          left: 50%;
+          transform: translate(-50%, 0) scale(2);
+          margin: 0;
+        }
+
+        .copyright {
+          position: unset;
+          padding: 0;
+          margin: 1rem auto;
+
+          .dot {
+            display: none;
+          }
         }
       }
     }
