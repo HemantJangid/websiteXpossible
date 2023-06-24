@@ -234,6 +234,7 @@ body {
             border: 1px white solid;
             border-radius: 1rem;
             padding: 2rem;
+            background-color: $black-color;
 
             .image {
               height: 200px;
@@ -341,6 +342,7 @@ body {
             align-items: center;
             max-width: 350px;
             padding: 2rem;
+            background-color: $black-color;
 
             .image {
               height: 280px;
@@ -411,6 +413,7 @@ body {
           align-items: center;
           justify-content: center;
           position: relative;
+          background-color: $black-color;
 
           .blog {
             color: $base-color;
@@ -492,6 +495,7 @@ body {
             align-items: center;
             padding: 5rem 3rem;
             transition: none;
+            background-color: $black-color;
 
             .background {
               position: absolute;
@@ -503,7 +507,7 @@ body {
               background-image: url("./images/landing/phone-screen.png");
               background-repeat: no-repeat;
               background-size: 100% 100%;
-              z-index: -1;
+              z-index: 0;
 
               visibility: hidden;
               opacity: 0;
@@ -610,6 +614,7 @@ body {
             border: 1px white solid;
             border-radius: 1rem;
             padding: 2rem;
+            background-color: $black-color;
           }
         }
       }
@@ -876,6 +881,9 @@ body {
     }
 
     .team {
+      max-width: 100%;
+      overflow: hidden;
+
       .heading-slider-container {
         swiper-container {
           swiper-slide {

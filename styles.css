@@ -207,6 +207,7 @@ body .works .heading-slider-container swiper-container swiper-slide .work {
   border: 1px white solid;
   border-radius: 1rem;
   padding: 2rem;
+  background-color: #000;
 }
 body .works .heading-slider-container swiper-container swiper-slide .work .image {
   height: 200px;
@@ -300,6 +301,7 @@ body .merchs .heading-slider-container swiper-container swiper-slide .merch {
   align-items: center;
   max-width: 350px;
   padding: 2rem;
+  background-color: #000;
 }
 body .merchs .heading-slider-container swiper-container swiper-slide .merch .image {
   height: 280px;
@@ -358,6 +360,7 @@ body .blogs .heading-slider-container swiper-container swiper-slide {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: #000;
 }
 body .blogs .heading-slider-container swiper-container swiper-slide .blog {
   color: #ffd554;
@@ -428,6 +431,7 @@ body .team .heading-slider-container swiper-container swiper-slide .member {
   align-items: center;
   padding: 5rem 3rem;
   transition: none;
+  background-color: #000;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .background {
   position: absolute;
@@ -439,7 +443,7 @@ body .team .heading-slider-container swiper-container swiper-slide .member .back
   background-image: url("./images/landing/phone-screen.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
+  z-index: 0;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
@@ -529,6 +533,7 @@ body .testimonials .heading-slider-container swiper-container swiper-slide .test
   border: 1px white solid;
   border-radius: 1rem;
   padding: 2rem;
+  background-color: #000;
 }
 body .testimonials .custom-swiper-buttons {
   display: flex;
@@ -748,6 +753,10 @@ body .footer .footer-container .copyright .dot:last-child {
     width: max-content;
     text-align: center;
     margin: 3rem auto;
+  }
+  body .team {
+    max-width: 100%;
+    overflow: hidden;
   }
   body .team .heading-slider-container swiper-container swiper-slide .member {
     height: 700px;

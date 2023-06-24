@@ -226,6 +226,9 @@ body .footer .footer-container .copyright .dot:last-child {
   body .hero .hero-right {
     margin-top: 3rem;
   }
+  body .hero .hero-right form label {
+    font-size: 1.5rem;
+  }
   body .illustrations {
     display: none;
   }

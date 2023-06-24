@@ -747,6 +747,9 @@
           },
         },
         scrollbar: true,
+        ...(window.innerWidth < 700
+          ? { effect: "cards", grabCursor: true }
+          : {}),
         // navigation: true,
         // pagination: {
         //   clickable: true,
