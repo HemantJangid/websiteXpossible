@@ -5,7 +5,7 @@
 }
 
 .font-yellow {
-  color: #ffd554;
+  color: #f9d71d;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 body .btn {
   border: none;
   border-radius: 50px;
-  background-color: #ffd554;
+  background-color: #f9d71d;
   color: #000;
   padding: 1rem 3rem;
   text-transform: uppercase;
@@ -101,7 +101,7 @@ body .hero h2 {
   font-size: 2.5rem;
   font-weight: 600;
   margin: 5rem 0 1rem 0;
-  color: #ffd554;
+  color: #f9d71d;
 }
 body .hero p {
   font-size: 1.5rem;
@@ -124,7 +124,7 @@ body .features p {
   font-weight: 400;
   line-height: 3rem;
   text-align: center;
-  color: #ffd554;
+  color: #f9d71d;
 }
 body .features p img {
   display: inline;
@@ -174,7 +174,7 @@ body .services img.side-content {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #ffd554;
+  color: #f9d71d;
   transform: translate(0, -50%) scale(0.6);
 }
 body .works {
@@ -186,7 +186,7 @@ body .works .heading-slider-container {
   align-items: center;
 }
 body .works .heading-slider-container img.side-content {
-  color: #ffd554;
+  color: #f9d71d;
   max-width: 53px;
 }
 body .works .heading-slider-container swiper-container {
@@ -200,7 +200,7 @@ body .works .heading-slider-container swiper-container swiper-slide {
   justify-content: center;
 }
 body .works .heading-slider-container swiper-container swiper-slide .work {
-  color: #ffd554;
+  color: #f9d71d;
   display: flex;
   flex-direction: column;
   max-width: 350px;
@@ -279,7 +279,7 @@ body .merchs .heading-slider-container {
   align-items: center;
 }
 body .merchs .heading-slider-container img.side-content {
-  color: #ffd554;
+  color: #f9d71d;
   max-width: 53px;
 }
 body .merchs .heading-slider-container swiper-container {
@@ -294,7 +294,7 @@ body .merchs .heading-slider-container swiper-container swiper-slide {
   position: relative;
 }
 body .merchs .heading-slider-container swiper-container swiper-slide .merch {
-  color: #ffd554;
+  color: #f9d71d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +345,7 @@ body .blogs .heading-slider-container {
   align-items: center;
 }
 body .blogs .heading-slider-container img.side-content {
-  color: #ffd554;
+  color: #f9d71d;
   max-width: 53px;
 }
 body .blogs .heading-slider-container swiper-container {
@@ -360,7 +360,7 @@ body .blogs .heading-slider-container swiper-container swiper-slide {
   position: relative;
 }
 body .blogs .heading-slider-container swiper-container swiper-slide .blog {
-  color: #ffd554;
+  color: #f9d71d;
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -406,7 +406,7 @@ body .team .heading-slider-container {
   align-items: flex-start;
 }
 body .team .heading-slider-container img.side-content {
-  color: #ffd554;
+  color: #f9d71d;
   max-width: 53px;
 }
 body .team .heading-slider-container swiper-container {
@@ -464,7 +464,7 @@ body .team .heading-slider-container swiper-container swiper-slide .member .meta
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.designation {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #ffd554;
+  color: #f9d71d;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.description {
   font-size: 1rem;
@@ -506,7 +506,7 @@ body .testimonials .heading-slider-container {
   align-items: center;
 }
 body .testimonials .heading-slider-container img.side-content {
-  color: #ffd554;
+  color: #f9d71d;
   max-width: 53px;
 }
 body .testimonials .heading-slider-container swiper-container {
@@ -521,7 +521,7 @@ body .testimonials .heading-slider-container swiper-container swiper-slide {
   position: relative;
 }
 body .testimonials .heading-slider-container swiper-container swiper-slide .testimonial {
-  color: #ffd554;
+  color: #f9d71d;
   display: flex;
   height: 500px;
   width: 350px;
@@ -557,7 +557,7 @@ body .connect h3 {
   font-weight: 400;
   margin: 1rem 0;
   text-align: center;
-  color: #ffd554;
+  color: #f9d71d;
   text-transform: uppercase;
   position: relative;
 }
@@ -572,7 +572,7 @@ body .connect p {
   line-height: 0.2;
 }
 body .footer {
-  background-color: #ffd554;
+  background-color: #f9d71d;
   position: relative;
 }
 body .footer .footer-container {
@@ -649,7 +649,7 @@ body .footer .footer-container .copyright .dot:last-child {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffd554;
+    color: #f9d71d;
     margin: 1rem auto;
     padding: 1rem 2rem;
     text-transform: uppercase;
