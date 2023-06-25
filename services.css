@@ -152,6 +152,62 @@ body .services .service-right h3 {
 body .services .service-right p {
   text-align: right;
 }
+body .footer {
+  background-color: #f9d71c;
+  position: relative;
+  max-width: 100%;
+}
+body .footer .footer-container {
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 0;
+  padding-top: 8rem;
+  margin-top: 20rem;
+}
+body .footer .footer-container img {
+  height: 400px;
+}
+body .footer .footer-container .links {
+  display: flex;
+}
+body .footer .footer-container .links ul {
+  margin: 2rem;
+}
+body .footer .footer-container .links ul li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+body .footer .footer-container img.illustration {
+  position: absolute;
+  top: -270px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .footer .footer-container .copyright {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10rem 4rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+body .footer .footer-container .copyright .dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 0 1.5rem;
+}
+body .footer .footer-container .copyright .dot:last-child {
+  margin-right: 3rem;
+}
 
 @media only screen and (max-width: 700px) {
   body {
@@ -192,5 +248,29 @@ body .services .service-right p {
   body .services .service-left,
   body .services .service-right {
     flex-direction: column-reverse;
+  }
+  body .footer .footer-container {
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-top: 150px;
+    z-index: 1;
+  }
+  body .footer .footer-container img {
+    height: 200px;
+    margin-top: 70px;
+  }
+  body .footer .footer-container img.illustration {
+    top: -135px;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  body .footer .footer-container .copyright {
+    position: unset;
+    padding: 0;
+    margin: 1rem auto;
+  }
+  body .footer .footer-container .copyright .dot {
+    display: none;
   }
 }/*# sourceMappingURL=services.css.map */

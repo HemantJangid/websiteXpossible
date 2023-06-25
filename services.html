@@ -126,45 +126,31 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script>
-      const workSwiper = document.querySelector("swiper-container.work-swiper");
-      const merchSwiper = document.querySelector(
-        "swiper-container.merch-swiper"
-      );
-      const blogSwiper = document.querySelector("swiper-container.blog-swiper");
+    <!-- <img src="./images/service-footer-.png" alt="" srcset="" /> -->
 
-      const params = {
-        navigation: {
-          nextEl: ".custom-swiper-buttons-right",
-          prevEl: ".custom-swiper-buttons-left",
-        },
-        centeredSlides: false,
-        slidesPerGroupSkip: 1,
-        grabCursor: true,
-        keyboard: {
-          enabled: true,
-        },
-        breakpoints: {
-          769: {
-            slidesPerView: 3,
-            slidesPerGroup: 1,
-          },
-        },
-        scrollbar: true,
-        // navigation: true,
-        // pagination: {
-        //   clickable: true,
-        // },
-      };
-
-      Object.assign(workSwiper, params);
-      Object.assign(merchSwiper, params);
-      Object.assign(blogSwiper, params);
-
-      workSwiper.initialize();
-      merchSwiper.initialize();
-      blogSwiper.initialize();
-    </script>
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container footer-container">
+        <img src="./gifs/footer logo.gif" alt="" />
+        <div class="links">
+          <ul>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Offerings</li>
+            <li>Clients</li>
+            <li>Blogs</li>
+          </ul>
+          <ul>
+            <li>Merch</li>
+            <li>FAQ's</li>
+          </ul>
+        </div>
+        <img class="illustration" src="./images/service-footer-.png" alt="" />
+        <div class="copyright">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>copyrights possiblecreative
+        </div>
+      </div>
+    </section>
   </body>
 </html>
