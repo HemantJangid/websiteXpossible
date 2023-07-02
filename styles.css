@@ -123,6 +123,12 @@ body .hero span {
 body .features {
   margin: 2rem auto;
 }
+body .features img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 280px;
+  margin: auto;
+}
 body .features .feature-margin {
   height: 100px;
   width: 100%;

@@ -144,6 +144,12 @@ body {
   .features {
     margin: 2rem auto;
 
+    img {
+      object-fit: cover;
+      height: 280px;
+      margin: auto;
+    }
+
     .feature-margin {
       height: 100px;
       width: 100%;
