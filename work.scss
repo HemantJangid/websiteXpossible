@@ -108,11 +108,10 @@ body {
     flex-direction: column;
     position: relative;
     height: 100vh;
+    width: 100vw;
 
     img.cube {
       object-fit: cover;
-      max-height: 700px;
-      transform: scale(1.1);
       z-index: 3;
     }
 
