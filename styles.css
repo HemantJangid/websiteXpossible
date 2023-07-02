@@ -8,6 +8,10 @@
   color: #f9d71d;
 }
 
+img.mobile {
+  display: none;
+}
+
 body {
   font-family: "Jost", sans-serif;
   color: #fff;
@@ -119,18 +123,9 @@ body .hero span {
 body .features {
   margin: 2rem auto;
 }
-body .features p {
-  font-size: 2.8rem;
-  font-weight: 400;
-  line-height: 3rem;
-  text-align: center;
-  color: #f9d71d;
-}
-body .features p img {
-  display: inline;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 280px;
+body .features .feature-margin {
+  height: 100px;
+  width: 100%;
 }
 body .services {
   margin: 10rem auto;
@@ -232,7 +227,7 @@ body .works .custom-swiper-buttons {
 body .works .custom-swiper-buttons img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-width: 100px;
   margin-bottom: -80px;
 }
 body .works .custom-swiper-buttons img.swiper-button-disabled {
@@ -262,7 +257,7 @@ body .clients .client {
 body .clients .client img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-width: 100px;
 }
 body .clients img.side-content {
   position: absolute;
@@ -327,7 +322,7 @@ body .merchs .custom-swiper-buttons {
 body .merchs .custom-swiper-buttons img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-width: 100px;
   margin-bottom: -80px;
 }
 body .merchs .custom-swiper-buttons img.swiper-button-disabled {
@@ -388,7 +383,7 @@ body .blogs .custom-swiper-buttons {
 body .blogs .custom-swiper-buttons img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-width: 100px;
   margin-bottom: -80px;
 }
 body .blogs .custom-swiper-buttons img.swiper-button-disabled {
@@ -488,7 +483,7 @@ body .team .custom-swiper-buttons {
 body .team .custom-swiper-buttons img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-width: 100px;
   margin-bottom: -80px;
 }
 body .team .custom-swiper-buttons img.swiper-button-disabled {
@@ -539,7 +534,7 @@ body .testimonials .custom-swiper-buttons {
 body .testimonials .custom-swiper-buttons img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-width: 100px;
   margin-bottom: -80px;
 }
 body .testimonials .custom-swiper-buttons img.swiper-button-disabled {
@@ -628,6 +623,14 @@ body .footer .footer-container .copyright .dot:last-child {
   html {
     overflow: auto;
   }
+  .gif-mobile {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .gif-desktop {
+    display: none;
+  }
   body {
     background-color: #000;
     box-sizing: border-box;
@@ -671,15 +674,11 @@ body .footer .footer-container .copyright .dot:last-child {
     font-size: 1.5rem;
   }
   body .features {
-    padding: 1rem;
-    margin-top: 5rem;
+    margin: auto;
   }
-  body .features p {
-    font-size: 1.1rem;
-  }
-  body .features p img {
-    height: 200px;
-    width: 200px;
+  body .features .feature-margin {
+    height: 50px;
+    width: 100%;
   }
   body .services {
     width: auto;

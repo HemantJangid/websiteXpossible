@@ -13,6 +13,10 @@ $black-color: #000;
   color: $base-color;
 }
 
+img.mobile {
+  display: none;
+}
+
 body {
   font-family: "Jost", sans-serif;
   color: $white-color;
@@ -140,18 +144,9 @@ body {
   .features {
     margin: 2rem auto;
 
-    p {
-      font-size: 2.8rem;
-      font-weight: 400;
-      line-height: 3rem;
-      text-align: center;
-      color: $base-color;
-
-      img {
-        display: inline;
-        object-fit: cover;
-        max-width: 280px;
-      }
+    .feature-margin {
+      height: 100px;
+      width: 100%;
     }
   }
 
@@ -266,7 +261,7 @@ body {
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-width: 100px;
         margin-bottom: -80px;
 
         &.swiper-button-disabled {
@@ -299,7 +294,7 @@ body {
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-width: 100px;
       }
     }
 
@@ -375,7 +370,7 @@ body {
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-width: 100px;
         margin-bottom: -80px;
 
         &.swiper-button-disabled {
@@ -447,7 +442,7 @@ body {
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-width: 100px;
         margin-bottom: -80px;
 
         &.swiper-button-disabled {
@@ -564,7 +559,7 @@ body {
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-width: 100px;
         margin-bottom: -80px;
 
         &.swiper-button-disabled {
@@ -624,7 +619,7 @@ body {
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-width: 100px;
         margin-bottom: -80px;
 
         &.swiper-button-disabled {
@@ -733,6 +728,17 @@ body {
   html {
     overflow: auto;
   }
+
+  .gif-mobile {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .gif-desktop {
+    display: none;
+  }
+
   body {
     background-color: $black-color;
     box-sizing: border-box;
@@ -785,16 +791,10 @@ body {
     }
 
     .features {
-      padding: 1rem;
-      margin-top: 5rem;
-
-      p {
-        font-size: 1.1rem;
-
-        img {
-          height: 200px;
-          width: 200px;
-        }
+      margin: auto;
+      .feature-margin {
+        height: 50px;
+        width: 100%;
       }
     }
 

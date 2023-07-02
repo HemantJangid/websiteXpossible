@@ -97,11 +97,11 @@ body .hero h2 {
   margin: 5rem 0 1rem 0;
 }
 body .hero p {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
   margin: 2rem 0;
   text-align: center;
-  max-width: 1200px;
+  max-width: 900px;
 }
 body .hero span {
   font-size: 3rem;
@@ -111,7 +111,7 @@ body .hero span {
 }
 body .services {
   margin: 10rem auto;
-  max-width: 900px;
+  max-width: 1000px;
 }
 body .services .service {
   display: flex;
@@ -128,20 +128,41 @@ body .services .service h3 {
 body .services .service p {
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 2rem 0;
+  margin: 0 0;
   max-width: 700px;
   line-height: 3rem;
 }
 body .services .service img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 350px;
+  max-height: 500px;
+}
+body .services .service ul {
+  list-style: disc;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+body .services .service ul li {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 2rem;
+  max-width: 700px;
+  line-height: 2rem;
 }
 body .services .service-left {
   flex-direction: row;
 }
 body .services .service-left p {
   text-align: left;
+}
+body .services .service-left ul {
+  justify-content: flex-start;
+}
+body .services .service-left ul li {
+  margin-right: 1.8rem;
+  margin-left: 1.2rem;
 }
 body .services .service-right {
   flex-direction: row-reverse;
@@ -151,6 +172,26 @@ body .services .service-right h3 {
 }
 body .services .service-right p {
   text-align: right;
+}
+body .services .service-right ul {
+  justify-content: flex-end;
+}
+body .services .service-right ul li {
+  margin-right: 0;
+  margin-left: 3rem;
+}
+body .illustration-container {
+  position: relative;
+  z-index: 3;
+  margin-top: 20rem;
+  width: 100%;
+}
+body .illustration-container img.illustration {
+  position: absolute;
+  bottom: -8rem;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 body .footer {
   background-color: #f9d71c;
@@ -164,7 +205,6 @@ body .footer .footer-container {
   margin: auto;
   padding: 2rem 0;
   padding-top: 8rem;
-  margin-top: 20rem;
 }
 body .footer .footer-container img {
   height: 400px;
@@ -180,13 +220,6 @@ body .footer .footer-container .links ul li {
   font-weight: 600;
   margin: 1rem 0;
   cursor: pointer;
-}
-body .footer .footer-container img.illustration {
-  position: absolute;
-  top: -270px;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 body .footer .footer-container .copyright {
   display: flex;
@@ -245,25 +278,34 @@ body .footer .footer-container .copyright .dot:last-child {
     font-size: 1rem;
     line-height: unset;
   }
+  body .services .service ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .services .service ul li {
+    font-size: 1rem;
+    line-height: unset;
+    margin: 0;
+  }
   body .services .service-left,
   body .services .service-right {
     flex-direction: column-reverse;
   }
+  body .illustration-container {
+    margin-top: 10rem;
+  }
+  body .illustration-container img.illustration {
+    position: absolute;
+    bottom: -2rem;
+  }
   body .footer .footer-container {
     flex-direction: column;
     padding: 1rem 0;
-    margin-top: 150px;
     z-index: 1;
   }
   body .footer .footer-container img {
     height: 200px;
-    margin-top: 70px;
-  }
-  body .footer .footer-container img.illustration {
-    top: -135px;
-    left: 0;
-    right: 0;
-    margin: 0;
+    margin-top: 50px;
   }
   body .footer .footer-container .copyright {
     position: unset;
