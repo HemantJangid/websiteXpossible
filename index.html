@@ -32,6 +32,33 @@
       </ul>
     </nav>
 
+    <nav class="container navigation-mobile mobile">
+      <img src="./gifs/logo.gif" alt="logo" height="200" width="200" />
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <div class="nav-overlay mobile">
+      <div class="topbar">
+        <img src="./gifs/logo.gif" alt="logo" height="200" width="200" />
+        <div class="close">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </div>
+      </div>
+      <ul>
+        <a href="/"><li>About us</li></a>
+        <a href="/services.html"><li>Services</li></a>
+        <a href="/work.html"><li>Work</li></a>
+        <a href="/"><li>Blogs</li></a>
+        <a href="/"><li>Merch</li></a>
+        <a href="/contact.html"><li>Contact us</li></a>
+      </ul>
+    </div>
+
     <!-- Hero -->
     <section class="container hero">
       <img src="./gifs/possible cube gif.gif" alt="hero" />
@@ -608,8 +635,8 @@
 
     <!-- Lets connect -->
     <section class="container connect">
-      <img class="gif-desktop" src="./gifs/connect-with-us-.gif" alt="" />
-      <img class="gif-mobile" src="./gifs/connect-with-us-mobile.gif" alt="" />
+      <img class="desktop" src="./gifs/connect-with-us-.gif" alt="" />
+      <img class="mobile" src="./gifs/connect-with-us-mobile.gif" alt="" />
 
       <!-- <h3>
         Lets connect <br />
@@ -654,6 +681,19 @@
       </div>
     </section>
 
+    <script>
+      let hamburger = document.querySelector(".hamburger");
+      let close = document.querySelector(".close");
+      let navOverlay = document.querySelector(".nav-overlay");
+
+      hamburger.addEventListener("click", () => {
+        navOverlay.classList.add("active");
+      });
+
+      close.addEventListener("click", () => {
+        navOverlay.classList.remove("active");
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script>
       const workSwiper = document.querySelector("swiper-container.work-swiper");

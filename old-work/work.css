@@ -52,8 +52,7 @@ body .background .navigation ul {
   align-items: center;
   position: relative;
 }
-body .background .navigation ul::before,
-body .background .navigation ul::after {
+body .background .navigation ul::before, body .background .navigation ul::after {
   content: " ";
   position: absolute;
   display: block;
@@ -78,7 +77,7 @@ body .background .navigation img {
   height: 180px;
   width: 180px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin: 0 3rem;
 }
 body .background .hero {
@@ -90,7 +89,7 @@ body .background .hero {
 }
 body .background .hero img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   transform: scale(1.1);
 }
@@ -115,7 +114,7 @@ body .work-body .work-anybody-bg .work-anybody .gif {
   height: 150px;
   flex: 1;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   background: #000;
 }
 body .work-body .work-anybody-bg .work-anybody img {
@@ -123,7 +122,7 @@ body .work-body .work-anybody-bg .work-anybody img {
   transform: scale(0.9);
   width: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 body .work-body .work-cards {
   display: grid;
@@ -170,12 +169,12 @@ body .work-body .work-cards img.work-brand-logo {
   transform: scale(0.8);
   height: 100px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 body .work-body .work-cards img.thumbnail {
   width: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   margin-top: 1rem;
 }
 body .work-body .work-cards h3 {
@@ -191,4 +190,4 @@ body .work-body .work-cards p {
   font-size: 1rem;
   font-weight: 400;
   text-align: justify;
-} /*# sourceMappingURL=work.css.map */
+}/*# sourceMappingURL=work.css.map */

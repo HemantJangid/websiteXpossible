@@ -115,6 +115,8 @@ body .work .main {
 }
 body .work .main img {
   margin: auto;
+  max-height: 100px;
+  max-width: 200px;
 }
 body .work .main h2 {
   font-size: 2rem;

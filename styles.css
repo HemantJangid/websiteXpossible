@@ -8,7 +8,7 @@
   color: #f9d71d;
 }
 
-.gif-mobile {
+.mobile {
   display: none;
 }
 
@@ -629,13 +629,106 @@ body .footer .footer-container .copyright .dot:last-child {
   html {
     overflow: auto;
   }
-  .gif-mobile {
+  .mobile {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
   }
-  .gif-desktop {
+  .desktop {
     display: none;
+  }
+  .navigation-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background-color: #000;
+    border-bottom: 1px solid #f9d71d;
+  }
+  .navigation-mobile img {
+    max-height: 80px;
+    width: auto;
+  }
+  .navigation-mobile .hamburger {
+    width: 30px;
+    cursor: pointer;
+  }
+  .navigation-mobile .hamburger .line {
+    height: 2px;
+    width: 100%;
+    background-color: #f9d71d;
+    margin: 5px 0;
+  }
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f9d71d;
+  }
+  .nav-overlay.active {
+    right: 0;
+  }
+  .nav-overlay .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+  }
+  .nav-overlay .topbar img {
+    max-height: 80px;
+    width: auto;
+  }
+  .nav-overlay .topbar .close {
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-overlay .topbar .close .line {
+    height: 2px;
+    width: 100%;
+    background-color: #f9d71d;
+    margin: 5px 0;
+  }
+  .nav-overlay .topbar .close .line-1 {
+    transform: rotate(45deg);
+  }
+  .nav-overlay .topbar .close .line-2 {
+    margin-top: -7px;
+    transform: rotate(-45deg);
+  }
+  .nav-overlay ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+  }
+  .nav-overlay ul li {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    cursor: pointer;
   }
   body {
     background-color: #000;
@@ -643,6 +736,7 @@ body .footer .footer-container .copyright .dot:last-child {
     margin: auto;
     overflow-x: hidden;
     max-width: 100vw;
+    padding-top: 100px;
   }
   body .background {
     display: none;
