@@ -647,7 +647,6 @@ body .footer .footer-container .copyright .dot:last-child {
     right: 0;
     z-index: 998;
     background-color: #000;
-    border-bottom: 1px solid #f9d71d;
   }
   .navigation-mobile img {
     max-height: 80px;
@@ -677,7 +676,6 @@ body .footer .footer-container .copyright .dot:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #f9d71d;
   }
   .nav-overlay.active {
     right: 0;

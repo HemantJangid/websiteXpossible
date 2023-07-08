@@ -755,7 +755,7 @@ body {
     right: 0;
     z-index: 998;
     background-color: $black-color;
-    border-bottom: 1px solid $base-color;
+    // border-bottom: 1px solid $base-color;
 
     img {
       max-height: 80px;
@@ -789,7 +789,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $base-color;
+    // border: 1px solid $base-color;
 
     &.active {
       right: 0;
