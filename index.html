@@ -659,41 +659,55 @@
     <!-- Footer -->
     <section class="footer">
       <div class="container footer-container">
-        <img src="./gifs/footer logo.gif" alt="" />
+        <div class="footer-left">
+          <img src="./gifs/footer logo.gif" alt="" />
+          <p>
+            Trust your ally <br />
+            We are here to make it... possible
+          </p>
+        </div>
         <div class="links">
           <ul>
             <li>About us</li>
             <li>Contact us</li>
-            <li>Offerings</li>
+            <li>Services</li>
             <li>Clients</li>
             <li>Blogs</li>
-          </ul>
-          <ul>
-            <li>Merch</li>
-            <li>FAQ's</li>
+            <li>Work</li>
           </ul>
         </div>
-        <img class="illustration" src="./images/homepage-footer-.png" alt="" />
-        <div class="copyright">
-          <span class="dot"></span><span class="dot"></span
-          ><span class="dot"></span>copyrights possiblecreative
+        <div class="footer-right">
+          <img
+            class="illustration"
+            src="./images/homepage-footer-.png"
+            alt=""
+          />
+          <h2>Subscribe</h2>
+          <p>Subscribe for inspiring stories, inside news, and updates!</p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <div class="icons">
+            <a href="">
+              <img src="./images/social-icons/fb.svg" />
+            </a>
+            <a href="">
+              <img src="./images/social-icons/linkedin.svg" />
+            </a>
+            <a href="">
+              <img src="./images/social-icons/ig.svg" />
+            </a>
+            <a href="">
+              <img src="./images/social-icons/threads.svg" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <script>
-      let hamburger = document.querySelector(".hamburger");
-      let close = document.querySelector(".close");
-      let navOverlay = document.querySelector(".nav-overlay");
-
-      hamburger.addEventListener("click", () => {
-        navOverlay.classList.add("active");
-      });
-
-      close.addEventListener("click", () => {
-        navOverlay.classList.remove("active");
-      });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script>
       const workSwiper = document.querySelector("swiper-container.work-swiper");
@@ -727,10 +741,11 @@
             slidesPerGroup: 1,
           },
         },
-        scrollbar: true,
+        scrollbar: false,
         ...(window.innerWidth < 700
           ? { effect: "cards", grabCursor: true }
           : {}),
+        loop: true,
         // navigation: true,
         // pagination: {
         //   clickable: true,
@@ -758,5 +773,6 @@
       testimonialSwiper.initialize();
       teamSwiper.initialize();
     </script>
+    <script src="./index.js" />
   </body>
 </html>

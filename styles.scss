@@ -1,5 +1,5 @@
 // $base-color: #ffd554;
-$base-color: #f9d71d;
+$base-color: #f4d67d;
 $white-color: #fff;
 $black-color: #000;
 
@@ -670,24 +670,40 @@ body {
   .footer {
     background-color: $base-color;
     position: relative;
-    // height: 500px;
+    padding-top: 2rem;
 
     .footer-container {
       color: $black-color;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       margin: auto;
       padding: 2rem 0;
 
-      img {
-        height: 400px;
+      .footer-left {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 2;
+
+        img {
+          height: 200px;
+          max-height: 200px;
+          margin-left: -35px;
+        }
+
+        p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          margin: 1rem 0;
+          line-height: 1.2;
+        }
       }
 
       .links {
         display: flex;
+        flex: 1;
 
         ul {
-          margin: 2rem;
           li {
             font-size: 1.3rem;
             font-weight: 600;
@@ -697,32 +713,66 @@ body {
         }
       }
 
-      img.illustration {
-        position: absolute;
-        top: -150px;
-        right: 150px;
-        transform: scale(1.3);
-      }
-
-      .copyright {
+      .footer-right {
+        width: 100%;
+        flex: 3;
         display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding: 0 10rem 4rem 0;
-        font-size: 1.3rem;
-        font-weight: 600;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
 
-        .dot {
-          height: 30px;
-          width: 30px;
-          border-radius: 50%;
-          background-color: $black-color;
-          margin: 0 1.5rem;
+        img.illustration {
+          position: absolute;
+          top: -170px;
+          right: 150px;
+          transform: scale(1.3);
+          max-height: 300px;
+        }
 
-          &:last-child {
-            margin-right: 3rem;
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+
+        input {
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid $black-color;
+          padding: 0.5rem 0;
+          margin-top: 1.6rem;
+          outline: none;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        .icons {
+          display: flex;
+          align-items: center;
+          margin-top: 1.5rem;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: #000 1px solid;
+            padding: 5px;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            margin-right: 1rem;
+
+            img {
+              height: 18px;
+            }
           }
         }
       }
@@ -859,10 +909,6 @@ body {
     overflow-x: hidden;
     max-width: 100vw;
     padding-top: 100px;
-
-    .background {
-      display: none;
-    }
 
     .navigation {
       display: none;
@@ -1046,30 +1092,50 @@ body {
     }
 
     .footer {
+      margin-top: 20rem;
+
       .footer-container {
         flex-direction: column;
-        padding: 1rem 0;
-        margin-top: 400px;
+        padding: 1rem 2rem;
+        margin-top: 70px;
+        align-items: flex-start;
 
-        img {
-          height: 200px;
-          margin-top: 100px;
+        .footer-left {
+          align-items: flex-start;
+          text-align: left;
+
+          img {
+            height: 200px;
+          }
+
+          p {
+            font-size: 1.1rem;
+          }
         }
 
-        img.illustration {
-          top: -200px;
-          left: 50%;
-          transform: translate(-50%, 0) scale(2);
-          margin: 0;
+        .links {
+          ul {
+            li {
+              font-size: 1.1rem;
+            }
+          }
         }
 
-        .copyright {
-          position: unset;
-          padding: 0;
-          margin: 1rem auto;
+        .footer-right {
+          img.illustration {
+            top: -300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin: 0;
+            max-height: 400px;
+          }
 
-          .dot {
-            display: none;
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1.1rem;
           }
         }
       }

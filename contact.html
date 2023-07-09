@@ -30,6 +30,33 @@
       </ul>
     </nav>
 
+    <nav class="container navigation-mobile mobile">
+      <img src="./gifs/logo.gif" alt="logo" height="200" width="200" />
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <div class="nav-overlay mobile">
+      <div class="topbar">
+        <img src="./gifs/logo.gif" alt="logo" height="200" width="200" />
+        <div class="close">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </div>
+      </div>
+      <ul>
+        <a href="/"><li>About us</li></a>
+        <a href="/services.html"><li>Services</li></a>
+        <a href="/work.html"><li>Work</li></a>
+        <a href="/"><li>Blogs</li></a>
+        <a href="/"><li>Merch</li></a>
+        <a href="/contact.html"><li>Contact us</li></a>
+      </ul>
+    </div>
+
     <!-- Hero -->
     <div class="common-bg">
       <section class="container hero">
@@ -71,13 +98,18 @@
       />
 
       <section class="illustrations">
-        <!-- <img
-        class="brick-wall"
-        src="./images/contact/brick-wall.png"
-        alt=""
-        srcset=""
-      /> -->
-        <img class="main" src="./images/contact/final.gif" alt="" srcset="" />
+        <img
+          class="main mobile"
+          src="./images/contact/final.gif"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="main desktop"
+          src="./images/contact/final-desktop.gif"
+          alt=""
+          srcset=""
+        />
         <img class="poster-2" src="./images/contact/poster-2.png" alt="" />
         <img class="poster-3" src="./images/contact/poster-3.png" alt="" />
       </section>
@@ -85,26 +117,51 @@
       <!-- Footer -->
       <section class="footer">
         <div class="container footer-container">
-          <img src="./gifs/footer logo.gif" alt="" />
+          <div class="footer-left">
+            <img src="./gifs/footer logo.gif" alt="" />
+            <p>
+              Trust your ally <br />
+              We are here to make it... possible
+            </p>
+          </div>
           <div class="links">
             <ul>
               <li>About us</li>
               <li>Contact us</li>
-              <li>Offerings</li>
+              <li>Services</li>
               <li>Clients</li>
               <li>Blogs</li>
-            </ul>
-            <ul>
-              <li>Merch</li>
-              <li>FAQ's</li>
+              <li>Work</li>
             </ul>
           </div>
-          <div class="copyright">
-            <span class="dot"></span><span class="dot"></span
-            ><span class="dot"></span>copyrights possiblecreative
+          <div class="footer-right">
+            <h2>Subscribe</h2>
+            <p>Subscribe for inspiring stories, inside news, and updates!</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <div class="icons">
+              <a href="">
+                <img src="./images/social-icons/fb.svg" />
+              </a>
+              <a href="">
+                <img src="./images/social-icons/linkedin.svg" />
+              </a>
+              <a href="">
+                <img src="./images/social-icons/ig.svg" />
+              </a>
+              <a href="">
+                <img src="./images/social-icons/threads.svg" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </div>
+
+    <script src="./index.js" />
   </body>
 </html>
