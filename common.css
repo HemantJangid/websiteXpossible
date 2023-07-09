@@ -48,7 +48,7 @@
 }
 
 .footer {
-  background-color: #f9d404;
+  background-color: #faf9f6;
   position: relative;
   padding-top: 2rem;
 }
@@ -73,8 +73,10 @@
 .footer .footer-container .footer-left p {
   font-size: 1.2rem;
   font-weight: 400;
-  margin: 1rem 0;
-  line-height: 1.2;
+}
+.footer .footer-container .footer-left p.trust {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .footer .footer-container .links {
   display: flex;
@@ -109,18 +111,35 @@
   font-size: 1.2rem;
   font-weight: 400;
 }
-.footer .footer-container .footer-right input {
+.footer .footer-container .footer-right .email-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+}
+.footer .footer-container .footer-right .email-form input {
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000;
   padding: 0.5rem 0;
   margin-top: 1.6rem;
   outline: none;
 }
-.footer .footer-container .footer-right input:focus {
+.footer .footer-container .footer-right .email-form input:focus {
   outline: none;
   box-shadow: none;
+}
+.footer .footer-container .footer-right .email-form button.submit {
+  background-color: #f9d404;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer .footer-container .footer-right .email-form button.submit:hover {
+  background-color: #c7a903;
 }
 .footer .footer-container .footer-right .icons {
   display: flex;
@@ -170,6 +189,7 @@
     left: 0;
     right: 0;
     z-index: 998;
+    background-color: #000;
   }
   body .navigation-mobile img {
     max-height: 80px;
@@ -250,6 +270,10 @@
     font-weight: 600;
     margin: 0.7rem 0;
     cursor: pointer;
+  }
+  body .nav-overlay img.mobile-nav-footer {
+    position: absolute;
+    bottom: 0;
   }
   body .footer {
     margin-top: 20rem;

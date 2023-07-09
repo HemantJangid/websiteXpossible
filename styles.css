@@ -198,7 +198,7 @@ body .works .custom-swiper-buttons .custom-swiper-buttons-right {
 body .clients {
   margin: 10rem auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   max-width: 1000px;
   position: relative;
@@ -215,7 +215,8 @@ body .clients .client {
 body .clients .client img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100px;
+  max-height: 120px;
+  max-width: 200px;
 }
 body .clients img.side-content {
   position: absolute;

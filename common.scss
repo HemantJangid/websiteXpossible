@@ -1,6 +1,7 @@
 $base-color: #f9d404;
 $white-color: #fff;
 $black-color: #000;
+$offwhite-color: #faf9f6;
 
 .mobile {
   display: none;
@@ -59,7 +60,7 @@ $black-color: #000;
 }
 
 .footer {
-  background-color: $base-color;
+  background-color: $offwhite-color;
   position: relative;
   padding-top: 2rem;
 
@@ -85,8 +86,11 @@ $black-color: #000;
       p {
         font-size: 1.2rem;
         font-weight: 400;
-        margin: 1rem 0;
-        line-height: 1.2;
+      }
+
+      p.trust {
+        font-size: 1.5rem;
+        font-weight: 500;
       }
     }
 
@@ -130,18 +134,38 @@ $black-color: #000;
         font-weight: 400;
       }
 
-      input {
-        width: 100%;
-        background-color: transparent;
-        border: none;
+      .email-form {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
         border-bottom: 2px solid $black-color;
-        padding: 0.5rem 0;
-        margin-top: 1.6rem;
-        outline: none;
 
-        &:focus {
+        input {
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          padding: 0.5rem 0;
+          margin-top: 1.6rem;
           outline: none;
-          box-shadow: none;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        button.submit {
+          background-color: $base-color;
+          border: none;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          font-size: 1rem;
+          font-weight: 500;
+
+          &:hover {
+            background-color: darken($base-color, 10%);
+          }
         }
       }
 
@@ -202,6 +226,7 @@ $black-color: #000;
       left: 0;
       right: 0;
       z-index: 998;
+      background-color: $black-color;
 
       img {
         max-height: 80px;
@@ -294,6 +319,11 @@ $black-color: #000;
           margin: 0.7rem 0;
           cursor: pointer;
         }
+      }
+
+      img.mobile-nav-footer {
+        position: absolute;
+        bottom: 0;
       }
     }
 

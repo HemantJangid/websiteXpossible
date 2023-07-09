@@ -58,8 +58,10 @@ body {
     width: 100vw;
 
     img.cube {
-      object-fit: cover;
+      object-fit: contain;
       z-index: 3;
+      max-width: 100%;
+      // background-color: yellow;
     }
 
     img.icon {
