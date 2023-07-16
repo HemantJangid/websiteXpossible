@@ -58,7 +58,7 @@ body {
         }
 
         p {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           font-weight: 400;
         }
       }
@@ -98,7 +98,6 @@ body {
 
     .illustrations {
       position: relative;
-      max-width: 1200px;
       margin: auto;
       height: 100vh;
       width: 100vw;
@@ -131,15 +130,15 @@ body {
       img.poster-3 {
         position: absolute;
         top: 15%;
-        right: -2%;
+        right: 8%;
         object-fit: cover;
         max-height: 250px;
       }
     }
+  }
 
-    .footer {
-      background-color: $white-color;
-    }
+  .footer {
+    background-color: $white-color;
   }
 }
 
@@ -162,10 +161,12 @@ body {
 
         .hero-left {
           margin-top: 3rem;
+          padding: 0 2rem;
         }
 
         .hero-right {
           margin-top: 3rem;
+          padding: 0 2rem;
 
           form {
             label {

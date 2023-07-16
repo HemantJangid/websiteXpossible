@@ -61,26 +61,33 @@ body {
       transform: scale(1.1);
     }
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 5rem 0 1rem 0;
-      color: $base-color;
-    }
+    #about-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-    p {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin: 1rem 0;
-      text-align: center;
-      max-width: 800px;
-    }
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 5rem 0 1rem 0;
+        color: $base-color;
+      }
 
-    span {
-      font-size: 3rem;
-      font-weight: 600;
-      margin: 2rem 0;
-      text-align: center;
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 1rem 0;
+        text-align: center;
+        max-width: 800px;
+      }
+
+      span {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 2rem 0;
+        text-align: center;
+      }
     }
   }
 
@@ -180,9 +187,8 @@ body {
             border-radius: 1rem;
             padding: 2rem;
 
-            .image {
+            img {
               height: 200px;
-              background-color: white;
               border-radius: 10px;
             }
 
@@ -257,16 +263,26 @@ body {
   }
 
   .merchs {
-    margin: 10rem auto 10rem 0;
-    max-width: 1400px;
+    margin: 10rem auto;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     .heading-slider-container {
       display: flex;
       align-items: center;
+      position: relative;
 
       img.side-content {
         color: $base-color;
         max-width: 53px;
+        position: absolute;
+        top: 50%;
+        right: -160px;
+        z-index: 3;
+        transform: translate(0, -50%);
       }
 
       swiper-container {
@@ -310,10 +326,18 @@ body {
           }
         }
       }
+
+      button {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: -240px;
+        transform: translate(0, -50%) rotate(-90deg);
+      }
     }
 
     .custom-swiper-buttons {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: space-between;
       padding: 0 6rem;
@@ -445,7 +469,8 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               height: 700px;
-              width: 350px;
+              width: 100%;
+              max-width: 350px;
               background-image: url("./images/landing/phone-screen.png");
               background-repeat: no-repeat;
               background-size: 100% 100%;
@@ -467,13 +492,19 @@ body {
               visibility: hidden;
               opacity: 0;
               transition: visibility 0s, opacity 0.5s linear;
+              padding-top: 1rem;
 
               p {
                 margin-top: 0.5rem;
                 text-align: center;
               }
 
-              p.name,
+              p.name {
+                font-size: 2rem;
+                font-weight: 600;
+                color: $base-color;
+              }
+
               p.designation {
                 font-size: 1.5rem;
                 font-weight: 400;
@@ -481,9 +512,9 @@ body {
               }
 
               p.description {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 400;
-                margin-top: 2rem;
+                margin-top: 2.2rem;
               }
             }
 
@@ -551,7 +582,8 @@ body {
             color: $base-color;
             display: flex;
             height: 500px;
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
             flex-direction: column;
             border: 1px white solid;
             border-radius: 1rem;
@@ -641,23 +673,25 @@ body {
     }
 
     .hero {
-      padding: 1rem;
+      padding: 2rem;
       text-align: center;
 
-      img {
-        max-width: 100%;
-      }
+      #about-us {
+        img {
+          max-width: 100%;
+        }
 
-      h2 {
-        font-size: 1.5rem;
-      }
+        h2 {
+          font-size: 1.5rem;
+        }
 
-      p {
-        font-size: 1.1rem;
-      }
+        p {
+          font-size: 1.1rem;
+        }
 
-      span {
-        font-size: 1.5rem;
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -702,7 +736,17 @@ body {
     .team,
     .testimonials {
       margin: 2rem auto;
+      padding: 0 2rem;
     }
+
+    // .works > .heading-slider-container,
+    // .merchs > .heading-slider-container,
+    // .blogs > .heading-slider-container,
+    // .team > .heading-slider-container,
+    // .testimonials > .heading-slider-container {
+    //   padding: 0 2rem;
+    //   overflow: hidden;
+    // }
 
     .works > .heading-slider-container > .side-content,
     .merchs > .heading-slider-container > .side-content,
@@ -726,7 +770,7 @@ body {
     }
 
     .work,
-    .merch,
+    // .merch,
     .blog,
     .member,
     .testimonial {
@@ -768,9 +812,6 @@ body {
           swiper-slide {
             .member {
               height: 700px;
-              background-image: url("./images/landing/phone-screen.png");
-              background-repeat: no-repeat;
-              background-size: 100% 100%;
 
               .background,
               .metadata {

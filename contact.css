@@ -47,7 +47,7 @@ body .common-bg .hero .hero-left img {
   height: 50px;
 }
 body .common-bg .hero .hero-left p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 body .common-bg .hero .hero-right {
@@ -78,7 +78,6 @@ body .common-bg .poster-1 {
 }
 body .common-bg .illustrations {
   position: relative;
-  max-width: 1200px;
   margin: auto;
   height: 100vh;
   width: 100vw;
@@ -110,12 +109,12 @@ body .common-bg .illustrations img.poster-2 {
 body .common-bg .illustrations img.poster-3 {
   position: absolute;
   top: 15%;
-  right: -2%;
+  right: 8%;
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 250px;
 }
-body .common-bg .footer {
+body .footer {
   background-color: #fff;
 }
 
@@ -137,9 +136,11 @@ body .common-bg .footer {
   }
   body .common-bg .hero .hero-left {
     margin-top: 3rem;
+    padding: 0 2rem;
   }
   body .common-bg .hero .hero-right {
     margin-top: 3rem;
+    padding: 0 2rem;
   }
   body .common-bg .hero .hero-right form label {
     font-size: 1.5rem;

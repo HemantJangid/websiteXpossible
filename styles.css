@@ -53,20 +53,26 @@ body .hero img {
   max-height: 600px;
   transform: scale(1.1);
 }
-body .hero h2 {
+body .hero #about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .hero #about-us h2 {
   font-size: 2.5rem;
   font-weight: 600;
   margin: 5rem 0 1rem 0;
   color: #f9d404;
 }
-body .hero p {
+body .hero #about-us p {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 1rem 0;
   text-align: center;
   max-width: 800px;
 }
-body .hero span {
+body .hero #about-us span {
   font-size: 3rem;
   font-weight: 600;
   margin: 2rem 0;
@@ -161,9 +167,8 @@ body .works .heading-slider-container swiper-container swiper-slide .work {
   border-radius: 1rem;
   padding: 2rem;
 }
-body .works .heading-slider-container swiper-container swiper-slide .work .image {
+body .works .heading-slider-container swiper-container swiper-slide .work img {
   height: 200px;
-  background-color: white;
   border-radius: 10px;
 }
 body .works .heading-slider-container swiper-container swiper-slide .work .title {
@@ -225,16 +230,26 @@ body .clients img.side-content {
   transform: translate(0, -50%) scale(0.6);
 }
 body .merchs {
-  margin: 10rem auto 10rem 0;
-  max-width: 1400px;
+  margin: 10rem auto;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 body .merchs .heading-slider-container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 body .merchs .heading-slider-container img.side-content {
   color: #f9d404;
   max-width: 53px;
+  position: absolute;
+  top: 50%;
+  right: -160px;
+  z-index: 3;
+  transform: translate(0, -50%);
 }
 body .merchs .heading-slider-container swiper-container {
   width: 100%;
@@ -272,8 +287,15 @@ body .merchs .heading-slider-container swiper-container swiper-slide .merch .des
   font-weight: 400;
   margin: 1rem 0;
 }
+body .merchs .heading-slider-container button {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: -240px;
+  transform: translate(0, -50%) rotate(-90deg);
+}
 body .merchs .custom-swiper-buttons {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 0 6rem;
@@ -389,7 +411,8 @@ body .team .heading-slider-container swiper-container swiper-slide .member .back
   left: 50%;
   transform: translate(-50%, -50%);
   height: 700px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   background-image: url("./images/landing/phone-screen.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -409,21 +432,26 @@ body .team .heading-slider-container swiper-container swiper-slide .member .meta
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
+  padding-top: 1rem;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p {
   margin-top: 0.5rem;
   text-align: center;
 }
-body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.name,
+body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f9d404;
+}
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.designation {
   font-size: 1.5rem;
   font-weight: 400;
   color: #f9d404;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member:hover {
   height: 700px;
@@ -478,7 +506,8 @@ body .testimonials .heading-slider-container swiper-container swiper-slide .test
   color: #f9d404;
   display: flex;
   height: 500px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   flex-direction: column;
   border: 1px white solid;
   border-radius: 1rem;
@@ -552,19 +581,19 @@ body .connect p {
     text-transform: uppercase;
   }
   body .hero {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
   }
-  body .hero img {
+  body .hero #about-us img {
     max-width: 100%;
   }
-  body .hero h2 {
+  body .hero #about-us h2 {
     font-size: 1.5rem;
   }
-  body .hero p {
+  body .hero #about-us p {
     font-size: 1.1rem;
   }
-  body .hero span {
+  body .hero #about-us span {
     font-size: 1.5rem;
   }
   body .features {
@@ -602,6 +631,7 @@ body .connect p {
   body .team,
   body .testimonials {
     margin: 2rem auto;
+    padding: 0 2rem;
   }
   body .works > .heading-slider-container > .side-content,
   body .merchs > .heading-slider-container > .side-content,
@@ -626,7 +656,6 @@ body .connect p {
     max-width: 120px;
   }
   body .work,
-  body .merch,
   body .blog,
   body .member,
   body .testimonial {
@@ -659,9 +688,6 @@ body .connect p {
   }
   body .team .heading-slider-container swiper-container swiper-slide .member {
     height: 700px;
-    background-image: url("./images/landing/phone-screen.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
   }
   body .team .heading-slider-container swiper-container swiper-slide .member .background,
   body .team .heading-slider-container swiper-container swiper-slide .member .metadata {

@@ -21,20 +21,32 @@
     <!-- Navigation -->
     <nav class="container navigation">
       <ul>
-        <a href="/"><li>About us</li></a>
+        <a href="/#about-us"><li>About us</li></a>
         <a href="/services.html"><li>Services</li></a>
         <a href="/work.html"><li>Work</li></a>
       </ul>
-      <img src="./gifs/logo.gif" alt="logo" height="200" width="200" />
+      <img
+        src="./gifs/logo.gif"
+        alt="logo"
+        height="200"
+        width="200"
+        onclick="window.location.href='/'"
+      />
       <ul>
-        <a href="/"><li>Blogs</li></a>
-        <a href="/"><li>Merch</li></a>
+        <a href="/#blogs"><li>Blogs</li></a>
+        <a href="/#merchs"><li>Merch</li></a>
         <a href="/contact.html"><li>Contact us</li></a>
       </ul>
     </nav>
 
     <nav class="container navigation-mobile mobile">
-      <img src="./gifs/logo.gif" alt="logo" height="200" width="200" />
+      <img
+        src="./gifs/logo.gif"
+        alt="logo"
+        height="200"
+        width="200"
+        onclick="window.location.href='/'"
+      />
       <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -51,11 +63,11 @@
         </div>
       </div>
       <ul>
-        <a href="/"><li>About us</li></a>
+        <a href="/#about-us"><li>About us</li></a>
         <a href="/services.html"><li>Services</li></a>
         <a href="/work.html"><li>Work</li></a>
-        <a href="/"><li>Blogs</li></a>
-        <a href="/"><li>Merch</li></a>
+        <a href="/#blogs"><li>Blogs</li></a>
+        <a href="/#merchs"><li>Merch</li></a>
         <a href="/contact.html"><li>Contact us</li></a>
       </ul>
       <img
@@ -69,27 +81,44 @@
     <!-- Hero -->
     <section class="container hero">
       <img src="./gifs/possible cube gif.gif" alt="hero" />
-      <h2>POSSIBLE IS YOUR CREATIVE ALLY</h2>
-      <p>
-        We are not that hundred-people conglomerate with processes to keep
-        agility behind, and interactions cold.
-      </p>
-      <p>
-        We are a bunch of creative folks who want to understand the business
-        problems from the business owners, and find interesting creative
-        solutions to those problems. The idea with Possible is to keep pushing
-        for better creative solutions, and not just ideas.
-      </p>
-      <p>Trust your ally. We are here to make it… possible.</p>
-      <span class="font-yellow">Possile? O yes!</span>
+      <div id="about-us">
+        <h2>POSSIBLE IS YOUR CREATIVE ALLY</h2>
+        <p>
+          We are not that hundred-people conglomerate with processes to keep
+          agility behind, and interactions cold.
+        </p>
+        <p>
+          We are a bunch of creative folks who want to understand the business
+          problems from the business owners, and find interesting creative
+          solutions to those problems. The idea with Possible is to keep pushing
+          for better creative solutions, and not just ideas.
+        </p>
+        <p>Trust your ally. We are here to make it… possible.</p>
+        <span class="font-yellow">Possile? O yes!</span>
+      </div>
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/mishthan bhandar.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img
         src="./images/landing/gifs/astrounout gif final.gif"
+        alt=""
+        srcset=""
+      />
+    </section>
+
+    <!-- Features -->
+    <section class="container features mobile">
+      <img
+        src="./images/landing/mobile-gifs/mishthan bhandar.gif"
+        alt=""
+        srcset=""
+      />
+      <div class="feature-margin"></div>
+      <img
+        src="./images/landing/mobile-gifs/astrounout gif final2.gif"
         alt=""
         srcset=""
       />
@@ -128,7 +157,9 @@
         <p>Social Media Creatives</p>
       </div>
 
-      <button class="btn">Know More</button>
+      <button class="btn" onclick="window.location.href='/services.html'">
+        Know More
+      </button>
       <img
         class="side-content"
         src="./images/landing/headlines/what-possible-does.png"
@@ -137,10 +168,17 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/chai anna.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/laundry.gif" alt="" srcset="" />
+    </section>
+
+    <!-- Features -->
+    <section class="container features mobile">
+      <img src="./images/landing/mobile-gifs/chai anna.gif" alt="" srcset="" />
+      <div class="feature-margin"></div>
+      <img src="./images/landing/mobile-gifs/laundry.gif" alt="" srcset="" />
     </section>
 
     <!-- Works -->
@@ -155,8 +193,8 @@
         <swiper-container class="work-swiper" init="false">
           <swiper-slide>
             <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <img src="./images/landing/work/SOTC.png" alt="" srcset="" />
+              <p class="title">SOTC.</p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio id a velit architecto sed in ad voluptatum mollitia,
@@ -166,8 +204,8 @@
           </swiper-slide>
           <swiper-slide>
             <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <img src="./images/landing/work/swiggy-.png" alt="" srcset="" />
+              <p class="title">Swiggy</p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio id a velit architecto sed in ad voluptatum mollitia,
@@ -177,8 +215,8 @@
           </swiper-slide>
           <swiper-slide>
             <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <img src="./images/landing/work/perfora.png" alt="" srcset="" />
+              <p class="title">Perfora</p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio id a velit architecto sed in ad voluptatum mollitia,
@@ -188,8 +226,8 @@
           </swiper-slide>
           <swiper-slide>
             <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <img src="./images/landing/work/ixr-labs-.png" alt="" srcset="" />
+              <p class="title">Ixr Labs</p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio id a velit architecto sed in ad voluptatum mollitia,
@@ -199,8 +237,8 @@
           </swiper-slide>
           <swiper-slide>
             <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <img src="./images/landing/work/tamboo-.png" alt="" srcset="" />
+              <p class="title">Tamboo</p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio id a velit architecto sed in ad voluptatum mollitia,
@@ -210,19 +248,8 @@
           </swiper-slide>
           <swiper-slide>
             <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio id a velit architecto sed in ad voluptatum mollitia,
-                temporibus expedita?
-              </p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="work">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <img src="./images/landing/work/IOTA.png" alt="" srcset="" />
+              <p class="title">IOTA</p>
               <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio id a velit architecto sed in ad voluptatum mollitia,
@@ -248,10 +275,17 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/jellyfish.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/Planet.gif" alt="" srcset="" />
+    </section>
+
+    <!-- Features -->
+    <section class="container features mobile" style="margin-top: 5rem">
+      <img src="./images/landing/mobile-gifs/jellyfish.gif" alt="" srcset="" />
+      <div class="feature-margin"></div>
+      <img src="./images/landing/mobile-gifs/Planet.gif" alt="" srcset="" />
     </section>
 
     <!-- Clients -->
@@ -305,57 +339,40 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/revolution.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/jalebi bai.gif" alt="" srcset="" />
     </section>
 
+    <!-- Features -->
+    <section class="container features mobile">
+      <img src="./images/landing/mobile-gifs/revolution.gif" alt="" srcset="" />
+      <div class="feature-margin"></div>
+      <img src="./images/landing/mobile-gifs/jalebi bai.gif" alt="" srcset="" />
+    </section>
+
     <!-- Merchs -->
-    <section class="merchs">
+    <section class="merchs" id="merchs">
       <h2 class="mobile-heading">Merch</h2>
       <div class="heading-slider-container">
         <swiper-container class="merch-swiper" init="false">
           <swiper-slide>
             <div class="merch">
               <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <p class="title">Mighty Totes</p>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div class="merch">
               <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <p class="title">Quirky Tees</p>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div class="merch">
               <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="merch">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="merch">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="merch">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="merch">
-              <div class="image"></div>
-              <p class="title">Lorem ipsum dolor sit.</p>
+              <p class="title">Poster Attack</p>
             </div>
           </swiper-slide>
         </swiper-container>
@@ -364,6 +381,7 @@
           src="./images/landing/headlines/merch.png"
           alt=""
         />
+        <button class="btn desktop">Know More</button>
       </div>
 
       <div class="custom-swiper-buttons">
@@ -381,14 +399,21 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/books.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/tv.gif" alt="" srcset="" />
     </section>
 
+    <!-- Features -->
+    <section class="container features mobile">
+      <img src="./images/landing/mobile-gifs/books.gif" alt="" srcset="" />
+      <div class="feature-margin"></div>
+      <img src="./images/landing/mobile-gifs/tv.gif" alt="" srcset="" />
+    </section>
+
     <!-- Blogs -->
-    <section class="blogs">
+    <section class="blogs" id="blogs">
       <h2 class="mobile-heading">Blogs</h2>
       <div class="heading-slider-container">
         <img
@@ -457,10 +482,21 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
-      <img src="./images/landing/gifs/pco.gif" alt="" srcset="" />
+    <section class="container features desktop">
+      <img src="./images/landing/gifs/owl.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/nimbumirchi.gif" alt="" srcset="" />
+    </section>
+
+    <!-- Features -->
+    <section class="container features mobile" style="margin-top: 5rem">
+      <img src="./images/landing/mobile-gifs/owl.gif" alt="" srcset="" />
+      <div class="feature-margin"></div>
+      <img
+        src="./images/landing/mobile-gifs/nimbumirchi.gif"
+        alt=""
+        srcset=""
+      />
     </section>
 
     <!-- team -->
@@ -563,6 +599,21 @@
               </div>
             </div>
           </swiper-slide>
+          <swiper-slide>
+            <div class="member">
+              <div class="background"></div>
+              <img src="./images/landing/team/karishini.png" alt="" />
+              <div class="metadata">
+                <p class="name">Karishini</p>
+                <p class="designation">Design + Dreamer</p>
+                <p class="description">
+                  If you do not see things that aren’t seen before, you aren’t
+                  designing that’s never been designed before. We all need
+                  perspectives, and I believe in bringing in new ones.
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
         </swiper-container>
       </div>
 
@@ -581,10 +632,21 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/electrick pole.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/Portal.gif" alt="" srcset="" />
+    </section>
+
+    <!-- Features -->
+    <section class="container features mobile" style="margin-top: 5rem">
+      <img
+        src="./images/landing/mobile-gifs/electrick pole.gif"
+        alt=""
+        srcset=""
+      />
+      <div class="feature-margin"></div>
+      <img src="./images/landing/mobile-gifs/Portal.gif" alt="" srcset="" />
     </section>
 
     <!-- Testimonials -->
@@ -642,10 +704,21 @@
     </section>
 
     <!-- Features -->
-    <section class="container features">
+    <section class="container features desktop">
       <img src="./images/landing/gifs/Astronaut vodka.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/gifs/car.gif" alt="" srcset="" />
+    </section>
+
+    <!-- Features -->
+    <section class="container features mobile" style="margin-top: 5rem">
+      <img
+        src="./images/landing/mobile-gifs/Astronaut vodka.gif"
+        alt=""
+        srcset=""
+      />
+      <div class="feature-margin"></div>
+      <img src="./images/landing/mobile-gifs/car.gif" alt="" srcset="" />
     </section>
 
     <!-- Lets connect -->
@@ -676,8 +749,6 @@
       <div class="container footer-container">
         <div class="footer-left">
           <img src="./gifs/footer logo.gif" alt="" />
-          <p class="trust">Trust your ally</p>
-          <p>We are here to make it... possible</p>
         </div>
         <div class="links">
           <ul>
@@ -690,13 +761,11 @@
           </ul>
         </div>
         <div class="footer-right">
-          <img
-            class="illustration"
-            src="./images/homepage-footer-.png"
-            alt=""
-          />
+          <img class="illustration" src="./gifs/footer-goat.gif" alt="" />
           <h2>Subscribe</h2>
-          <p>Subscribe for inspiring stories, inside news, and updates!</p>
+          <p>
+            Subscribe for beauty hacks, horror stories, goss and trade secrets.
+          </p>
           <div class="email-form">
             <input
               type="email"
@@ -759,9 +828,9 @@
           },
         },
         scrollbar: false,
-        ...(window.innerWidth < 700
-          ? { effect: "cards", grabCursor: true }
-          : {}),
+        // ...(window.innerWidth < 700
+        //   ? { effect: "cards", grabCursor: true }
+        //   : {}),
         loop: true,
         // navigation: true,
         // pagination: {

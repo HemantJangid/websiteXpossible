@@ -3,6 +3,10 @@ $white-color: #fff;
 $black-color: #000;
 $offwhite-color: #faf9f6;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mobile {
   display: none;
 }
@@ -55,7 +59,6 @@ $offwhite-color: #faf9f6;
     width: 150px;
     object-fit: cover;
     margin: 0 2.5rem;
-    margin-top: -2rem;
   }
 }
 
@@ -231,6 +234,7 @@ $offwhite-color: #faf9f6;
       img {
         max-height: 80px;
         width: auto;
+        margin-left: -1.1rem;
       }
 
       .hamburger {
