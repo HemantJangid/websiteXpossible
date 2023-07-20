@@ -28,6 +28,9 @@ body .btn {
 body .btn:hover {
   background-color: #fff;
 }
+body .navigation-mobile {
+  background-color: #191f2c;
+}
 body .background {
   position: fixed;
   bottom: 0;
@@ -69,14 +72,14 @@ body .hero span {
 }
 body .services {
   margin: 10rem auto;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 body .services .service {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 8rem auto;
+  margin: 3rem auto;
 }
 body .services .service h3 {
   font-size: 2.5rem;
@@ -88,26 +91,25 @@ body .services .service p {
   font-weight: 400;
   margin: 0 0;
   max-width: 700px;
-  line-height: 3rem;
+  line-height: 2.3rem;
 }
 body .services .service img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 500px;
+  max-height: 400px;
 }
 body .services .service ul {
   list-style: disc;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 body .services .service ul li {
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 1rem 2rem;
+  margin: 0.5rem 2rem;
   max-width: 700px;
-  line-height: 2rem;
   color: #f9d404;
 }
 body .services .service-left {
@@ -131,6 +133,7 @@ body .services .service-right h3 {
 }
 body .services .service-right p {
   text-align: right;
+  margin-right: 0;
 }
 body .services .service-right ul {
   justify-content: flex-end;

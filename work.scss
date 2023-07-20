@@ -54,12 +54,13 @@ body {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 0px;
     left: 0;
     height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
+    z-index: -1;
 
     img.cube {
       position: absolute;
@@ -72,7 +73,7 @@ body {
       position: absolute;
       inset: 0;
       margin: auto;
-      max-height: 450px;
+      max-height: 300px;
       z-index: 2;
       display: none;
     }
@@ -168,7 +169,17 @@ body {
   }
 
   .footer {
-    margin-top: 10rem;
+    margin-top: 30rem;
+
+    .footer-container {
+      .footer-right {
+        img.illustration {
+          top: -400px;
+          transform: scale(1.2);
+          max-height: 500px;
+        }
+      }
+    }
   }
 }
 
@@ -227,6 +238,19 @@ body {
             transform: rotate(180deg);
           }
         }
+      }
+    }
+
+    .illustration-container {
+      img.illustration {
+        bottom: -10rem;
+        transform: scale(0.65);
+      }
+    }
+
+    .footer {
+      .footer-container {
+        margin-top: 0rem;
       }
     }
   }

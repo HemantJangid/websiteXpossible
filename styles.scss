@@ -117,14 +117,15 @@ body {
     .service {
       display: flex;
       margin: 2rem auto;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       width: fit-content;
       flex-direction: column;
 
       img {
         object-fit: cover;
-        max-width: 200px;
+        max-height: 150px;
+        max-width: 150px;
       }
 
       p {
@@ -495,7 +496,7 @@ body {
               padding-top: 1rem;
 
               p {
-                margin-top: 0.5rem;
+                // margin-top: 0.3rem;
                 text-align: center;
               }
 
@@ -509,12 +510,13 @@ body {
                 font-size: 1.5rem;
                 font-weight: 400;
                 color: $base-color;
+                line-height: 2rem;
               }
 
               p.description {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-weight: 400;
-                margin-top: 2.2rem;
+                margin-top: 1.5rem;
               }
             }
 
@@ -587,7 +589,8 @@ body {
             flex-direction: column;
             border: 1px white solid;
             border-radius: 1rem;
-            padding: 2rem;
+            // padding: 2rem;
+            overflow: hidden;
           }
         }
       }
@@ -712,6 +715,7 @@ body {
       text-align: center;
 
       .service {
+        margin: 1.5rem auto;
         p {
           font-size: 1.1rem;
         }

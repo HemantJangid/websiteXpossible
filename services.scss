@@ -35,6 +35,10 @@ body {
     }
   }
 
+  .navigation-mobile {
+    background-color: $bg-color;
+  }
+
   .background {
     position: fixed;
     bottom: 0;
@@ -86,14 +90,14 @@ body {
 
   .services {
     margin: 10rem auto;
-    max-width: 1000px;
+    max-width: 1200px;
 
     .service {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 8rem auto;
+      margin: 3rem auto;
 
       h3 {
         font-size: 2.5rem;
@@ -106,12 +110,12 @@ body {
         font-weight: 400;
         margin: 0 0;
         max-width: 700px;
-        line-height: 3rem;
+        line-height: 2.3rem;
       }
 
       img {
         object-fit: cover;
-        max-height: 500px;
+        max-height: 400px;
       }
 
       ul {
@@ -119,14 +123,13 @@ body {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        margin-top: 2rem;
+        margin-top: 1rem;
 
         li {
           font-size: 1.5rem;
           font-weight: 400;
-          margin: 1rem 2rem;
+          margin: 0.5rem 2rem;
           max-width: 700px;
-          line-height: 2rem;
           color: $base-color;
         }
       }
@@ -158,6 +161,7 @@ body {
 
       p {
         text-align: right;
+        margin-right: 0;
       }
 
       ul {

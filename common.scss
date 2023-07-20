@@ -345,7 +345,9 @@ html {
           text-align: left;
 
           img {
+            margin-left: 0;
             height: 200px;
+            transform: translateX(-43px);
           }
 
           p {

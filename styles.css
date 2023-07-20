@@ -102,7 +102,7 @@ body .services {
 body .services .service {
   display: flex;
   margin: 2rem auto;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
@@ -111,7 +111,8 @@ body .services .service {
 body .services .service img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 200px;
+  max-height: 150px;
+  max-width: 150px;
 }
 body .services .service p {
   font-size: 1.5rem;
@@ -435,7 +436,6 @@ body .team .heading-slider-container swiper-container swiper-slide .member .meta
   padding-top: 1rem;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p {
-  margin-top: 0.5rem;
   text-align: center;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.name {
@@ -447,11 +447,12 @@ body .team .heading-slider-container swiper-container swiper-slide .member .meta
   font-size: 1.5rem;
   font-weight: 400;
   color: #f9d404;
+  line-height: 2rem;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .metadata p.description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  margin-top: 2.2rem;
+  margin-top: 1.5rem;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member:hover {
   height: 700px;
@@ -511,7 +512,7 @@ body .testimonials .heading-slider-container swiper-container swiper-slide .test
   flex-direction: column;
   border: 1px white solid;
   border-radius: 1rem;
-  padding: 2rem;
+  overflow: hidden;
 }
 body .testimonials .custom-swiper-buttons {
   display: flex;
@@ -610,6 +611,9 @@ body .connect p {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  body .services .service {
+    margin: 1.5rem auto;
   }
   body .services .service p {
     font-size: 1.1rem;

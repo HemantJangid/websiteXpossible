@@ -293,7 +293,9 @@ html {
     text-align: left;
   }
   body .footer .footer-container .footer-left img {
+    margin-left: 0;
     height: 200px;
+    transform: translateX(-43px);
   }
   body .footer .footer-container .footer-left p {
     font-size: 1.1rem;

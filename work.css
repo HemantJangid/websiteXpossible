@@ -43,12 +43,13 @@ body .hero {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: 0;
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
+  z-index: -1;
 }
 body .hero img.cube {
   position: absolute;
@@ -61,7 +62,7 @@ body .hero img.icon {
   position: absolute;
   inset: 0;
   margin: auto;
-  max-height: 450px;
+  max-height: 300px;
   z-index: 2;
   display: none;
 }
@@ -142,7 +143,12 @@ body #works .work .work-metadata .custom-swiper-buttons .custom-swiper-buttons-r
   transform: rotate(180deg);
 }
 body .footer {
-  margin-top: 10rem;
+  margin-top: 30rem;
+}
+body .footer .footer-container .footer-right img.illustration {
+  top: -400px;
+  transform: scale(1.2);
+  max-height: 500px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -194,5 +200,12 @@ body .footer {
        object-fit: cover;
     cursor: pointer;
     transform: rotate(180deg);
+  }
+  body .illustration-container img.illustration {
+    bottom: -10rem;
+    transform: scale(0.65);
+  }
+  body .footer .footer-container {
+    margin-top: 0rem;
   }
 }/*# sourceMappingURL=work.css.map */
