@@ -239,7 +239,7 @@ body .clients img.side-content {
   transform: translate(0, -50%) scale(0.6);
 }
 body .merchs {
-  margin: 10rem auto;
+  margin: 8rem auto;
   max-width: 1100px;
   display: flex;
   align-items: center;

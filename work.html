@@ -290,7 +290,7 @@
             </p>
             <img class="arrow metadata-toggle" src="./images/work-images/arrow.png" />
           </div>
-          <div class="work-metadata">
+          <div class="work-metadata active">
             <swiper-container class="work-swiper-${index}" init="false">
               ${[...Array(work.images)]
                 .map(
@@ -338,6 +338,7 @@
       metaDataToggles.forEach((metaDataToggle) => {
         metaDataToggle.addEventListener("click", () => {
           let metaData = metaDataToggle.parentElement.nextElementSibling;
+          console.log(metaData.style.height);
           if (metaData.style.height == "0px" || !metaData.style.height) {
             metaData.style.height = "500px";
             metaDataToggle.style.transform = "rotate(0deg)";
