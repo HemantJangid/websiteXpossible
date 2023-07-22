@@ -23,6 +23,7 @@ body .background {
   height: 100vh;
 }
 body img.coming-soon {
+  margin: 0 auto;
   margin-bottom: -254px;
   position: relative;
   z-index: 2;

@@ -50,8 +50,8 @@ body .hero {
 body .hero img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 600px;
-  transform: scale(1.1);
+  max-height: 550px;
+  transform: scale(1);
 }
 body .hero #about-us {
   display: flex;
@@ -60,35 +60,35 @@ body .hero #about-us {
   flex-direction: column;
 }
 body .hero #about-us h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin: 5rem 0 1rem 0;
+  margin: 5rem 0 0.5rem 0;
   color: #f9d404;
 }
 body .hero #about-us p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   text-align: center;
   max-width: 800px;
 }
 body .hero #about-us span {
   font-size: 3rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-align: center;
 }
 body .features {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 body .features img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 280px;
+  height: 250px;
   margin: auto;
 }
 body .features .feature-margin {
-  height: 100px;
+  height: 50px;
   width: 100%;
 }
 body .services {
@@ -164,6 +164,7 @@ body .works .heading-slider-container swiper-container swiper-slide .work {
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  min-height: 500px;
   border: 1px white solid;
   border-radius: 1rem;
   padding: 2rem;
@@ -171,6 +172,13 @@ body .works .heading-slider-container swiper-container swiper-slide .work {
 body .works .heading-slider-container swiper-container swiper-slide .work img {
   height: 200px;
   border-radius: 10px;
+}
+body .works .heading-slider-container swiper-container swiper-slide .work img.logo {
+  margin: 1rem auto;
+  width: auto;
+  height: auto;
+  max-height: 80px;
+  max-width: 200px;
 }
 body .works .heading-slider-container swiper-container swiper-slide .work .title {
   font-size: 1.5rem;
@@ -380,7 +388,7 @@ body .team {
 }
 body .team .heading-slider-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 body .team .heading-slider-container img.side-content {
   color: #f9d404;
@@ -399,12 +407,11 @@ body .team .heading-slider-container swiper-container swiper-slide {
 }
 body .team .heading-slider-container swiper-container swiper-slide .member {
   display: flex;
-  height: 350px;
+  height: 270px;
   width: 350px;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 3rem;
-  transition: none;
+  transition: all 0.3s ease-in-out;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member .background {
   position: absolute;
@@ -456,6 +463,7 @@ body .team .heading-slider-container swiper-container swiper-slide .member .meta
 }
 body .team .heading-slider-container swiper-container swiper-slide .member:hover {
   height: 700px;
+  padding: 5rem 3rem;
 }
 body .team .heading-slider-container swiper-container swiper-slide .member:hover .background,
 body .team .heading-slider-container swiper-container swiper-slide .member:hover .metadata {

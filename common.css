@@ -53,21 +53,20 @@ html {
 .footer {
   background-color: #faf9f6;
   position: relative;
-  padding-top: 2rem;
   z-index: 0;
+  padding: 1rem 0;
 }
 .footer .footer-container {
   color: #000;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin: auto;
-  padding: 2rem 0;
 }
 .footer .footer-container .footer-left {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  flex: 2;
+  flex: 1;
 }
 .footer .footer-container .footer-left img {
   height: 200px;
@@ -89,7 +88,7 @@ html {
 .footer .footer-container .links ul li {
   font-size: 1.3rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   cursor: pointer;
 }
 .footer .footer-container .footer-right {
