@@ -96,11 +96,11 @@ body #works .work .main p {
 }
 body #works .work .main img.arrow {
   margin: 2rem auto;
-  width: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out;
 }
 body #works .work .work-metadata {
   margin: 2rem auto;
