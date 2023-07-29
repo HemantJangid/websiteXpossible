@@ -37,7 +37,7 @@ body .common-bg .hero {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 body .common-bg .hero .hero-left {
   flex: 1;
@@ -113,6 +113,9 @@ body .common-bg .illustrations img.poster-3 {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 250px;
+}
+body .common-bg .footer {
+  margin-top: 10rem;
 }
 
 @media only screen and (max-width: 700px) {

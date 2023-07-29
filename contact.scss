@@ -47,7 +47,7 @@ body {
       display: flex;
       justify-content: center;
       margin: auto;
-      margin-top: 2rem;
+      margin-top: 10rem;
 
       .hero-left {
         flex: 1;
@@ -134,6 +134,10 @@ body {
         object-fit: cover;
         max-height: 250px;
       }
+    }
+
+    .footer {
+      margin-top: 10rem;
     }
   }
 }

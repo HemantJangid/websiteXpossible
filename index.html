@@ -17,9 +17,19 @@
   </head>
   <body>
     <div class="background"></div>
+    <button
+      class="btn back-to-top"
+      onclick="(() => {
+            document.querySelector('#navigation').scrollIntoView({
+            behavior: 'smooth'
+        });
+      })()"
+    >
+      Back to top
+    </button>
 
     <!-- Navigation -->
-    <nav class="container navigation">
+    <nav id="navigation" class="container navigation">
       <ul>
         <a href="/#about-us"><li>About us</li></a>
         <a href="/services.html"><li>Services</li></a>
@@ -94,13 +104,13 @@
           for better creative solutions, and not just ideas.
         </p>
         <p>Trust your ally. We are here to make it… possible.</p>
-        <span class="font-yellow">Possile? O yes!</span>
+        <span class="font-yellow">Possible? O yes!</span>
       </div>
     </section>
 
     <!-- Features -->
     <section class="container features desktop">
-      <img src="./images/landing/gifs/mishthan bhandar.gif" alt="" srcset="" />
+      <img src="./images/landing/gifs/Planet.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img
         src="./images/landing/gifs/astrounout gif final.gif"
@@ -205,6 +215,9 @@
                 company. We are enjoying collaboration with SOTC. There is a new
                 destination everyday.
               </p>
+              <button class="btn" onclick="window.location.href='/work.html'">
+                Know More
+              </button>
             </div>
           </swiper-slide>
           <swiper-slide>
@@ -220,6 +233,9 @@
                 Mostly launch and CRM comms for test markets, leading to
                 full-fledged launch
               </p>
+              <button class="btn" onclick="window.location.href='/work.html'">
+                Know More
+              </button>
             </div>
           </swiper-slide>
           <swiper-slide>
@@ -235,6 +251,9 @@
                 We have been making the client smile with some amazing pieces of
                 design work.
               </p>
+              <button class="btn" onclick="window.location.href='/work.html'">
+                Know More
+              </button>
             </div>
           </swiper-slide>
           <swiper-slide>
@@ -250,6 +269,9 @@
                 The idea here to make tech simple. We have been doing
                 communication for the brand, building it onwards and upwards.
               </p>
+              <button class="btn" onclick="window.location.href='/work.html'">
+                Know More
+              </button>
             </div>
           </swiper-slide>
           <swiper-slide>
@@ -266,6 +288,9 @@
                 performing artists. They trust us, for we are artists for them
                 too!
               </p>
+              <button class="btn" onclick="window.location.href='/work.html'">
+                Know More
+              </button>
             </div>
           </swiper-slide>
           <swiper-slide>
@@ -281,9 +306,18 @@
                 It takes words from heart to work on some extraordinary pieces
                 of craftsmanship. Print ads/posters/social media
               </p>
+              <button class="btn" onclick="window.location.href='/work.html'">
+                Know More
+              </button>
             </div>
           </swiper-slide>
         </swiper-container>
+        <button
+          class="btn know-more"
+          onclick="window.location.href='/services.html'"
+        >
+          Know More
+        </button>
       </div>
 
       <div class="custom-swiper-buttons">
@@ -304,7 +338,7 @@
     <section class="container features desktop">
       <img src="./images/landing/gifs/jellyfish.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
-      <img src="./images/landing/gifs/Planet.gif" alt="" srcset="" />
+      <img src="./images/landing/gifs/mishthan bhandar.gif" alt="" srcset="" />
     </section>
 
     <!-- Features -->
@@ -317,6 +351,11 @@
     <!-- Clients -->
     <h2 class="mobile-heading">Clients ❤️ Us</h2>
     <section class="container clients">
+      <img
+        class="side-content"
+        src="./images/landing/headlines/clients-love-us.png"
+        alt=""
+      />
       <div class="client">
         <img src="./images/landing/brand-logos/IOTA.png" alt="" />
       </div>
@@ -357,11 +396,12 @@
         <img src="./images/work-images/logos/tamboo.png" alt="" />
       </div>
 
-      <img
-        class="side-content"
-        src="./images/landing/headlines/clients-love-us.png"
-        alt=""
-      />
+      <button
+        class="btn know-more"
+        onclick="window.location.href='/services.html'"
+      >
+        Know More
+      </button>
     </section>
 
     <!-- Features -->
@@ -491,6 +531,13 @@
             </div>
           </swiper-slide>
         </swiper-container>
+
+        <button
+          class="btn know-more"
+          onclick="window.location.href='/services.html'"
+        >
+          Know More
+        </button>
       </div>
 
       <div class="custom-swiper-buttons">
@@ -647,6 +694,12 @@
             </div>
           </swiper-slide>
         </swiper-container>
+        <button
+          class="btn know-more"
+          onclick="window.location.href='/services.html'"
+        >
+          Know More
+        </button>
       </div>
 
       <div class="custom-swiper-buttons">
@@ -725,6 +778,12 @@
             <div class="testimonial"></div>
           </swiper-slide>
         </swiper-container>
+        <button
+          class="btn know-more"
+          onclick="window.location.href='/services.html'"
+        >
+          Know More
+        </button>
       </div>
 
       <div class="custom-swiper-buttons">
@@ -786,7 +845,9 @@
     <section class="footer">
       <div class="container footer-container">
         <div class="footer-left">
-          <img src="./gifs/footer logo.gif" alt="" />
+          <a href="/">
+            <img src="./gifs/footer logo.gif" alt="" />
+          </a>
         </div>
         <div class="links">
           <ul>
@@ -799,7 +860,7 @@
           </ul>
         </div>
         <div class="footer-right">
-          <img class="illustration" src="./gifs/footer-goat.gif" alt="" />
+          <img class="illustration" src="./gifs/footer-baby.gif" alt="" />
           <h2>Subscribe</h2>
           <p>
             Subscribe for beauty hacks, horror stories, goss and trade secrets.
@@ -817,13 +878,15 @@
             <a href="">
               <img src="./images/social-icons/fb.svg" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/we-r-possible/">
               <img src="./images/social-icons/linkedin.svg" />
             </a>
-            <a href="">
+            <a
+              href="https://instagram.com/we.r.possible?igshid=MzRlODBiNWFlZA=="
+            >
               <img src="./images/social-icons/ig.svg" />
             </a>
-            <a href="">
+            <a href="https://www.threads.net/@we.r.possible">
               <img src="./images/social-icons/threads.svg" />
             </a>
           </div>
@@ -870,6 +933,10 @@
         //   ? { effect: "cards", grabCursor: true }
         //   : {}),
         loop: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
         // navigation: true,
         // pagination: {
         //   clickable: true,
@@ -880,16 +947,7 @@
       Object.assign(merchSwiper, params);
       Object.assign(blogSwiper, params);
       Object.assign(testimonialSwiper, params);
-      Object.assign(teamSwiper, {
-        ...params,
-        breakpoints: {
-          ...params.breakpoints,
-          769: {
-            slidesPerView: 4,
-            slidesPerGroup: 1,
-          },
-        },
-      });
+      Object.assign(teamSwiper, params);
 
       workSwiper.initialize();
       merchSwiper.initialize();

@@ -86,7 +86,7 @@ body {
     .work {
       text-align: center;
       width: 100%;
-      margin-top: 3rem;
+      margin-top: 15rem;
 
       .main {
         max-width: 800px;
@@ -176,8 +176,9 @@ body {
       .footer-right {
         img.illustration {
           top: -400px;
-          transform: scale(0.8);
+          transform: scale(1);
           max-height: 500px;
+          right: 0;
         }
       }
     }
@@ -252,6 +253,15 @@ body {
     .footer {
       .footer-container {
         margin-top: 0rem;
+
+        .footer-right {
+          img.illustration {
+            top: -320px;
+            transform: scale(1);
+            max-height: 500px;
+            transform: translateX(-45%);
+          }
+        }
       }
     }
   }

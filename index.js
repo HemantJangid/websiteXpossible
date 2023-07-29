@@ -17,3 +17,16 @@ function createElementFromHTML(htmlString) {
   // Change this to div.childNodes to support multiple top-level nodes.
   return div.firstChild;
 }
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  let backToTop = document.querySelector(".back-to-top");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+}

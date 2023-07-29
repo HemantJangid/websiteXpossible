@@ -81,10 +81,12 @@ html {
       flex-direction: column;
       flex: 1;
 
-      img {
-        height: 200px;
-        max-height: 200px;
+      a {
         margin-left: -35px;
+        img {
+          height: 200px;
+          max-height: 200px;
+        }
       }
 
       p {
@@ -122,8 +124,8 @@ html {
 
       img.illustration {
         position: absolute;
-        top: -170px;
-        right: 150px;
+        bottom: 200px;
+        right: 100px;
         transform: scale(1.3);
         max-height: 300px;
       }

@@ -68,10 +68,12 @@ html {
   flex-direction: column;
   flex: 1;
 }
-.footer .footer-container .footer-left img {
+.footer .footer-container .footer-left a {
+  margin-left: -35px;
+}
+.footer .footer-container .footer-left a img {
   height: 200px;
   max-height: 200px;
-  margin-left: -35px;
 }
 .footer .footer-container .footer-left p {
   font-size: 1.2rem;
@@ -101,8 +103,8 @@ html {
 }
 .footer .footer-container .footer-right img.illustration {
   position: absolute;
-  top: -170px;
-  right: 150px;
+  bottom: 200px;
+  right: 100px;
   transform: scale(1.3);
   max-height: 300px;
 }

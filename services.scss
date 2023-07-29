@@ -36,13 +36,13 @@ body {
   }
 
   .navigation-mobile {
-    background-color: $bg-color;
+    background-color: $black-color;
   }
 
   .background {
     position: fixed;
-    bottom: 0;
-    background-image: url("./services-gifs/lady.gif");
+    inset: 0;
+    background-image: url("./images/landing/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
