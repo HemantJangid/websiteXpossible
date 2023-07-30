@@ -17,6 +17,7 @@ body {
   font-family: "Jost", sans-serif;
   color: $white-color;
   background-color: $black-color;
+  overflow-x: hidden;
 
   .btn {
     border: none;

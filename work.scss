@@ -26,6 +26,7 @@ $dark-blue: #0f0054;
 body {
   font-family: "Jost", sans-serif;
   color: $white-color;
+  overflow-x: hidden;
 
   .btn {
     border: none;

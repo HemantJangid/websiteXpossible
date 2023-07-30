@@ -24,9 +24,34 @@ window.onscroll = function () {
 
 function scrollFunction() {
   let backToTop = document.querySelector(".back-to-top");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
+  if (backToTop) {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
   }
 }
+
+let contactForm = document.getElementById("contact-form");
+function sendEmail(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+
+  Email.send({
+    SecureToken: "f2231ca1-e017-4d8a-86d0-803d0a78e3f1",
+    To: "hemantjangid.gyrix@gmail.com",
+    From: "hemantjangid.gyrix@gmail.com",
+    Subject: `Contact form submission`,
+    Body: `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Message: ${message}`,
+  }).then((message) => alert(message));
+}
+
+contactForm.addEventListener("submit", sendEmail);

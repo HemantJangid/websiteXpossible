@@ -20,6 +20,7 @@ body {
   font-family: "Jost", sans-serif;
   color: $white-color;
   background-color: $black-color;
+  overflow-x: hidden;
 
   .btn {
     border: none;
@@ -82,6 +83,7 @@ body {
             width: 100%;
             padding: 0.5rem;
             color: $black-color;
+            border-radius: 10px;
           }
 
           img {
