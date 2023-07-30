@@ -159,6 +159,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script>
       const params = {
+        lazy: true,
         centeredSlides: false,
         slidesPerGroupSkip: 1,
         grabCursor: true,
@@ -166,7 +167,15 @@
           enabled: true,
         },
         breakpoints: {
-          769: {
+          700: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          900: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          1400: {
             slidesPerView: 3,
             slidesPerGroup: 1,
           },
@@ -180,10 +189,10 @@
           delay: 1000,
           disableOnInteraction: false,
         },
-        // navigation: true,
-        // pagination: {
-        //   clickable: true,
-        // },
+        navigation: true,
+        pagination: {
+          clickable: true,
+        },
       };
 
       const totalSwipers = 10;
@@ -331,13 +340,21 @@
           `swiper-container.work-swiper-${index}`
         );
 
-        Object.assign(swiper, {
+        const config = {
           ...params,
-          navigation: {
-            nextEl: `#csbr-${index}`,
-            prevEl: `#csbl-${index}`,
-          },
-        });
+          // navigation: {
+          //   prevEl: `#csbl-${index}`,
+          //   nextEl: `#csbr-${index}`,
+          // },
+          // navigation: {
+          //   nextEl: ".custom-swiper-buttons-right",
+          //   prevEl: ".custom-swiper-buttons-left",
+          // },
+        };
+
+        console.log(config);
+
+        Object.assign(swiper, config);
         swiper.initialize();
       }
     </script>
@@ -346,8 +363,8 @@
       metaDataToggles.forEach((metaDataToggle) => {
         metaDataToggle.addEventListener("click", () => {
           let metaData = metaDataToggle.parentElement.nextElementSibling;
-          console.log(metaData.style.height);
-          if (metaData.style.height == "0px" || !metaData.style.height) {
+          console.log(metaData.style.height, !metaData.style.height);
+          if (metaData.style.height == "0px") {
             metaData.style.height = "500px";
             metaDataToggle.style.transform = "rotate(0deg)";
           } else {

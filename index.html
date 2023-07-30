@@ -314,7 +314,7 @@
         </swiper-container>
         <button
           class="btn know-more"
-          onclick="window.location.href='/services.html'"
+          onclick="window.location.href='/work.html'"
         >
           Know More
         </button>
@@ -472,7 +472,7 @@
     </section>
 
     <!-- Features -->
-    <section class="container features mobile">
+    <section class="container features mobile" style="margin-top: 5rem">
       <img src="./images/landing/mobile-gifs/books.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img src="./images/landing/mobile-gifs/tv.gif" alt="" srcset="" />
@@ -694,12 +694,12 @@
             </div>
           </swiper-slide>
         </swiper-container>
-        <button
+        <!-- <button
           class="btn know-more"
           onclick="window.location.href='/services.html'"
         >
           Know More
-        </button>
+        </button> -->
       </div>
 
       <div class="custom-swiper-buttons">
@@ -919,11 +919,15 @@
           enabled: true,
         },
         breakpoints: {
-          320: {
+          700: {
             slidesPerView: 1,
             slidesPerGroup: 1,
           },
-          769: {
+          900: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          1400: {
             slidesPerView: 3,
             slidesPerGroup: 1,
           },
