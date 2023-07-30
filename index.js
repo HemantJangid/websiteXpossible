@@ -45,6 +45,11 @@ function sendEmail(e) {
   let phone = document.getElementById("phone").value;
   let message = document.getElementById("message").value;
 
+  let loadingElement = createElementFromHTML(`
+    <div class="jumping-dots-loader"> <span></span> <span></span> <span></span> </div>
+    <div class="moving-gradient"></div>
+  `);
+
   Email.send({
     SecureToken: "f2231ca1-e017-4d8a-86d0-803d0a78e3f1",
     To: "hemantjangid.gyrix@gmail.com",
