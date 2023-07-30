@@ -51,7 +51,10 @@ function sendEmail(e) {
     From: "hemantjangid.gyrix@gmail.com",
     Subject: `Contact form submission`,
     Body: `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Message: ${message}`,
-  }).then((message) => alert(message));
+  }).then((message) => {
+    alert(message);
+    contactForm.reset();
+  });
 }
 
 contactForm.addEventListener("submit", sendEmail);
