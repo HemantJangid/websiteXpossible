@@ -93,7 +93,7 @@ body {
 
     .work {
       text-align: center;
-      margin-top: 15rem;
+      // margin-top: 5rem;
 
       .main {
         margin: auto;
@@ -170,6 +170,13 @@ body {
             transform: rotate(180deg);
           }
         }
+      }
+
+      .work-divider {
+        margin: 10rem auto;
+        width: 25%;
+        height: 0.5px;
+        background-color: $white-color;
       }
     }
   }

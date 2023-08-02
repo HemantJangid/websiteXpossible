@@ -150,7 +150,15 @@ body {
     }
 
     .footer {
-      margin-top: 10rem;
+      margin-top: 30rem;
+
+      .footer-container {
+        .footer-right {
+          img.illustration {
+            top: -250px;
+          }
+        }
+      }
     }
   }
 }
@@ -248,11 +256,16 @@ body {
     }
 
     .footer {
-      padding-top: 0 !important;
-      margin-top: 50px !important;
+      padding-top: 1rem !important;
+      margin-top: 15rem !important;
 
       .footer-container {
-        margin-top: 0;
+        margin-top: 2rem !important;
+        .footer-right {
+          img.illustration {
+            top: -160px !important;
+          }
+        }
       }
     }
   }
