@@ -942,6 +942,11 @@ body {
       img.logo {
         max-height: 50px !important;
         transform: scale(1);
+        margin: 0rem auto !important;
+
+        &.small {
+          max-height: 30px !important;
+        }
       }
     }
 
