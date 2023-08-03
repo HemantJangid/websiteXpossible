@@ -256,6 +256,17 @@ body {
             cursor: pointer;
           }
         }
+
+        .work-metadata {
+          img {
+            padding: 0 2.5rem !important;
+            width: auto !important;
+          }
+        }
+
+        .work-divider {
+          margin: 2rem auto;
+        }
       }
     }
 
