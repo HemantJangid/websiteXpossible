@@ -1050,10 +1050,31 @@ body {
 
     .team {
       .member {
+        height: 540px !important;
         background-color: $black-color;
 
+        p.name {
+          font-size: 1.2rem !important;
+        }
+
+        p.designation {
+          font-size: 1rem !important;
+        }
+
+        p.description {
+          margin-top: 0.2rem !important;
+          font-size: 0.8rem !important;
+          padding: 0 1rem !important;
+        }
+
+        img {
+          height: 160px !important;
+          width: 160px !important;
+        }
+
         .background {
-          max-width: 315px !important;
+          max-width: 290px !important;
+          height: 510px !important;
         }
       }
     }
