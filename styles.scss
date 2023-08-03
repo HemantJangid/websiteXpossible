@@ -941,13 +941,14 @@ body {
       min-height: 525px !important;
 
       img {
-        transform: scale(0.8);
+        height: auto !important;
       }
 
       img.logo {
         max-height: 50px !important;
         transform: scale(1);
         margin: 0rem auto !important;
+        margin-top: 1rem !important;
 
         &.small {
           max-height: 30px !important;
