@@ -920,7 +920,7 @@ body {
       padding: 0 3rem;
 
       img {
-        max-width: 120px;
+        max-width: 60px !important;
       }
     }
 
@@ -933,7 +933,7 @@ body {
     }
 
     .work {
-      min-height: 550px !important;
+      min-height: 525px !important;
 
       img {
         transform: scale(0.8);
@@ -1021,6 +1021,35 @@ body {
       p {
         font-size: 1.1rem;
         line-height: 1.3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    .works,
+    .merchs,
+    .blogs,
+    .team,
+    .testimonials {
+      margin: 2rem auto;
+      padding: 0;
+    }
+
+    .work,
+    .testimonial {
+      margin: 0 1rem !important;
+      width: auto !important;
+    }
+
+    .team {
+      .member {
+        background-color: $black-color;
+
+        .background {
+          max-width: 315px !important;
+        }
       }
     }
   }
