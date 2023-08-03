@@ -925,11 +925,15 @@ body {
     }
 
     .work,
-    // .merch,
     .blog,
     .member,
     .testimonial {
       background-color: $black-color;
+    }
+
+    .work,
+    .testimonial {
+      margin: 0 1rem !important;
     }
 
     .work {
@@ -1041,6 +1045,14 @@ body {
     .testimonial {
       margin: 0 1rem !important;
       width: auto !important;
+    }
+
+    .merchs {
+      .merch {
+        .image {
+          height: auto !important;
+        }
+      }
     }
 
     .team {
