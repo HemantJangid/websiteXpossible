@@ -917,7 +917,7 @@ body {
 
     .work,
     .blog,
-    .member,
+    // .member,
     .testimonial {
       background-color: $black-color;
     }
@@ -947,12 +947,34 @@ body {
       }
     }
 
-    .member {
-      height: 690px !important;
-      width: auto !important;
-      .background {
-        background-size: 100% 93% !important;
-        height: 690px !important;
+    .team {
+      .member {
+        height: 540px !important;
+        background-color: $black-color;
+
+        p.name {
+          font-size: 1.2rem !important;
+        }
+
+        p.designation {
+          font-size: 1rem !important;
+        }
+
+        p.description {
+          margin-top: 0.2rem !important;
+          font-size: 0.8rem !important;
+          padding: 0 2rem !important;
+        }
+
+        img {
+          height: 160px !important;
+          width: 160px !important;
+        }
+
+        .background {
+          max-width: 265px !important;
+          height: 510px !important;
+        }
       }
     }
 
@@ -1047,37 +1069,6 @@ body {
     .testimonial {
       margin: 0 1rem !important;
       width: auto !important;
-    }
-
-    .team {
-      .member {
-        height: 540px !important;
-        background-color: $black-color;
-
-        p.name {
-          font-size: 1.2rem !important;
-        }
-
-        p.designation {
-          font-size: 1rem !important;
-        }
-
-        p.description {
-          margin-top: 0.2rem !important;
-          font-size: 0.8rem !important;
-          padding: 0 1rem !important;
-        }
-
-        img {
-          height: 160px !important;
-          width: 160px !important;
-        }
-
-        .background {
-          max-width: 265px !important;
-          height: 510px !important;
-        }
-      }
     }
   }
 }
