@@ -301,6 +301,7 @@ body {
               position: absolute;
               bottom: 3rem;
               left: 50%;
+              width: 80%;
               transform: translateX(-50%);
               text-align: center;
               margin-top: 1rem;
@@ -696,7 +697,7 @@ body {
           .testimonial {
             color: $base-color;
             display: flex;
-            height: 500px;
+            // height: 500px;
             width: 100%;
             max-width: 350px;
             flex-direction: column;
@@ -929,6 +930,27 @@ body {
     .member,
     .testimonial {
       background-color: $black-color;
+    }
+
+    .work {
+      min-height: 550px !important;
+
+      img {
+        transform: scale(0.8);
+      }
+
+      img.logo {
+        max-height: 50px !important;
+        transform: scale(1);
+      }
+    }
+
+    .member {
+      height: 690px !important;
+      .background {
+        background-size: 100% 93% !important;
+        height: 690px !important;
+      }
     }
 
     .clients {

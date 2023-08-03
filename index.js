@@ -62,4 +62,4 @@ function sendEmail(e) {
   });
 }
 
-contactForm.addEventListener("submit", sendEmail);
+if (contactForm) contactForm.addEventListener("submit", sendEmail);

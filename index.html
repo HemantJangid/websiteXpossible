@@ -20,9 +20,11 @@
     <button
       class="btn back-to-top"
       onclick="(() => {
-            document.querySelector('#navigation').scrollIntoView({
-            behavior: 'smooth'
-        });
+          const navigation = document.querySelector('#navigation');
+          if(navigation) navigation.scrollIntoView({ behavior: 'smooth' });
+
+          const navigationMobile = document.querySelector('#hero');
+          if(navigationMobile) navigationMobile.scrollIntoView({ behavior: 'smooth' });
       })()"
     >
       Back to top
@@ -49,7 +51,7 @@
       </ul>
     </nav>
 
-    <nav class="container navigation-mobile mobile">
+    <nav id="navigation-mobile" class="container navigation-mobile mobile">
       <img
         src="./gifs/logo.gif"
         alt="logo"
@@ -89,7 +91,7 @@
     </div>
 
     <!-- Hero -->
-    <section class="container hero">
+    <section id="hero" class="container hero">
       <img src="./gifs/possible cube gif.gif" alt="hero" />
       <div id="about-us">
         <h2>POSSIBLE IS YOUR CREATIVE ALLY</h2>
@@ -121,11 +123,7 @@
 
     <!-- Features -->
     <section class="container features mobile">
-      <img
-        src="./images/landing/mobile-gifs/mishthan bhandar.gif"
-        alt=""
-        srcset=""
-      />
+      <img src="./images/landing/mobile-gifs/jellyfish.gif" alt="" srcset="" />
       <div class="feature-margin"></div>
       <img
         src="./images/landing/mobile-gifs/astrounout gif final2.gif"
@@ -343,7 +341,11 @@
 
     <!-- Features -->
     <section class="container features mobile" style="margin-top: 5rem">
-      <img src="./images/landing/mobile-gifs/jellyfish.gif" alt="" srcset="" />
+      <img
+        src="./images/landing/mobile-gifs/mishthan bhandar.gif"
+        alt=""
+        srcset=""
+      />
       <div class="feature-margin"></div>
       <img src="./images/landing/mobile-gifs/Planet.gif" alt="" srcset="" />
     </section>
