@@ -280,9 +280,25 @@ html {
           margin-left: -1.1rem;
         }
 
+        img.close {
+          display: none;
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+
+          &.active {
+            display: block;
+          }
+        }
+
         .hamburger {
+          display: none;
           width: 30px;
           cursor: pointer;
+
+          &.active {
+            display: block;
+          }
 
           .line {
             height: 2px;
