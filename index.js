@@ -1,13 +1,24 @@
 let hamburger = document.querySelector(".hamburger");
 let close = document.querySelector(".close");
 let navOverlay = document.querySelector(".nav-overlay");
+let links = document.querySelector(".links");
+let navMobile = document.querySelector(".navigation-mobile");
 
 hamburger.addEventListener("click", () => {
-  navOverlay.classList.add("active");
+  // navOverlay.classList.add("active");
+  if (links.classList.contains("active")) {
+    navMobile.classList.remove("active");
+    links.classList.remove("active");
+  } else {
+    navMobile.classList.add("active");
+    links.classList.add("active");
+  }
 });
 
 close.addEventListener("click", () => {
-  navOverlay.classList.remove("active");
+  // navOverlay.classList.remove("active");
+  navMobile.style.height = "90px";
+  links.style.display = "none";
 });
 
 function createElementFromHTML(htmlString) {

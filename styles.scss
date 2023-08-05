@@ -497,6 +497,7 @@ body {
           .blog {
             color: $base-color;
             display: flex;
+            align-items: center;
             flex-direction: column;
             padding: 2rem;
             background-image: url("./images/landing/blog-shape.png");
@@ -505,16 +506,18 @@ body {
             max-width: 350px;
 
             .image {
-              width: 250px;
-              height: 200px;
+              // max-width: 250px;
+              // max-height: 200px;
               background-color: white;
               border-radius: 10px;
+              border: 1px solid white;
             }
 
             .title {
               font-size: 1.5rem;
               font-weight: 600;
               margin: 1rem 0 5rem 0;
+              text-align: center;
             }
           }
         }
@@ -800,6 +803,10 @@ body {
     .know-more,
     .desktop {
       display: none;
+    }
+
+    .know-more-mobile {
+      margin-top: 5rem !important;
     }
 
     .navigation {

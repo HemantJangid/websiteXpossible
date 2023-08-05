@@ -74,7 +74,8 @@ body {
       position: absolute;
       object-fit: cover;
       z-index: 3;
-      height: 100vh;
+      // height: 100vh;
+      width: 100%;
     }
 
     img.icon {
