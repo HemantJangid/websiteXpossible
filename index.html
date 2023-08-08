@@ -573,17 +573,6 @@
             <div class="blog">
               <img
                 class="image"
-                src="./images/landing/blogs/procreate.png"
-                alt=""
-                srcset=""
-              />
-              <p class="title">10 things about procreate you didn't know</p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="blog">
-              <img
-                class="image"
                 src="./images/landing/blogs/bad-font-.png"
                 alt=""
                 srcset=""
@@ -604,12 +593,9 @@
           </swiper-slide>
         </swiper-container>
 
-        <button
-          class="btn know-more"
-          onclick="window.location.href='/coming-soon.html'"
-        >
-          Read More
-        </button>
+        <a href="https://possible-creative.myshopify.com/" , target="_blank">
+          <button class="btn know-more">Read More</button>
+        </a>
       </div>
 
       <div class="custom-swiper-buttons">
@@ -1058,11 +1044,11 @@
         // },
       };
 
-      Object.assign(workSwiper, params);
-      Object.assign(merchSwiper, params);
-      Object.assign(blogSwiper, params);
-      Object.assign(testimonialSwiper, params);
-      Object.assign(teamSwiper, params);
+      Object.assign(workSwiper, structuredClone(params));
+      Object.assign(merchSwiper, structuredClone(params));
+      Object.assign(blogSwiper, structuredClone(params));
+      Object.assign(testimonialSwiper, structuredClone(params));
+      Object.assign(teamSwiper, structuredClone(params));
 
       workSwiper.initialize();
       merchSwiper.initialize();
